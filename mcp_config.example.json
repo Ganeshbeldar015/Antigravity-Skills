@@ -1,0 +1,102 @@
+{
+  "$schema": "https://antigravity.google.com/mcp_config.schema.json",
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "env": {}
+    },
+    "context7": {
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "firebase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firebase-tools@latest",
+        "mcp"
+      ],
+      "env": {}
+    },
+    "github": {
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "linear": {
+      "url": "https://mcp.linear.app/mcp"
+    },
+    "gitlab": {
+      "url": "https://gitlab.com/api/v4/mcp",
+      "headers": {
+        "PRIVATE-TOKEN": "${GITLAB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "serena": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server"
+      ],
+      "env": {}
+    },
+    "terraform": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "TFE_TOKEN=${TFE_TOKEN}",
+        "hashicorp/terraform-mcp-server:0.4.0"
+      ],
+      "env": {}
+    },
+    "shadcn": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "shadcn@latest",
+        "mcp"
+      ],
+      "env": {}
+    },
+    "21st": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://21st.dev/api/mcp",
+        "--header",
+        "x-api-key: ${API_KEY_21ST}"
+      ],
+      "env": {}
+    },
+    "canva": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.canva.com/mcp"
+      ],
+      "env": {}
+    },
+    "StitchMCP": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://stitch.googleapis.com/mcp",
+        "--header",
+        "X-Goog-Api-Key: ${STITCH_API_KEY}"
+      ],
+      "env": {}
+    }
+  }
+}
