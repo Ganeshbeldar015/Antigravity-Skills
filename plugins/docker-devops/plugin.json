@@ -1,0 +1,12 @@
+{
+  "name": "docker-devops",
+  "displayName": "Docker DevOps",
+  "description": "Docker containerization and Compose orchestration toolkit: multi-stage build optimization, security hardening, and environment parity.",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Optimize multi-stage Dockerfile for minimal image footprint",
+    "Create production-ready Docker Compose stack with healthchecks",
+    "Audit container configuration for security vulnerabilities"
+  ]
+}

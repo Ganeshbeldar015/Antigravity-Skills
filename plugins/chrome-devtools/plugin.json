@@ -1,0 +1,12 @@
+{
+  "name": "chrome-devtools",
+  "displayName": "Chrome DevTools",
+  "description": "Real-time browser debugging and web performance profiling using Chrome DevTools MCP: inspect console errors, network latency, and Core Web Vitals.",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Debug browser console errors and failed network API requests",
+    "Audit Web Vitals and identify Largest Contentful Paint (LCP) bottlenecks",
+    "Inspect live DOM elements and compute CSS layout shifts"
+  ]
+}

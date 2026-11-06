@@ -1,0 +1,12 @@
+{
+  "name": "database-tools",
+  "displayName": "Database Tools",
+  "description": "Production database engineering toolkit: schema design, SQL query optimization, migration automation, and SQLite/PostgreSQL MCP inspection.",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Design normalized relational database schema with migrations",
+    "Optimize slow SQL query and analyze EXPLAIN execution plan",
+    "Inspect SQLite or PostgreSQL database using MCP tools"
+  ]
+}
