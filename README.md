@@ -68,13 +68,13 @@ python <path-to-Antigravity-Skills>/scripts/install.py database-tools --scope pr
 ### 3. Interactive CLI Commands
 
 ```bash
-# List all 66 plugins with versions and summaries
+# List all 71 plugins with versions and summaries
 python scripts/install.py --list
 
-# Inspect all plugins providing MCP servers and their transport types
+# Inspect all 30 plugins providing MCP servers and their transport types
 python scripts/install.py --mcp
 
-# Run the full validation test suite
+# Run the full validation test suite (100% passing across 71 plugins)
 python scripts/test_plugins.py
 ```
 
@@ -84,10 +84,15 @@ python scripts/test_plugins.py
 
 This repository includes a turnkey unified configuration file: [`mcp_config.example.json`](./mcp_config.example.json).
 
-Connect these leading Model Context Protocol tools directly to your Antigravity environment:
+Connect these 30 leading Model Context Protocol tools directly to your Antigravity environment:
 
 | Tool Server | Provider | Transport | Key Capabilities |
 | :--- | :--- | :---: | :--- |
+| **`aidesigner`** | AIDesigner AI | `HTTP (OAuth)` | Generative UI artifacts, clone/enhance visual workflows, screenshot QA, and repository adoption. |
+| **`storyflow`** | Storyflow | `HTTP (OAuth)` | Infinite canvas workspace, visual agile Kanban boards, mind maps, and user story mapping. |
+| **`sequential-thinking`** | Model Context Protocol | `Stdio` | Multi-step chain-of-thought dynamic reasoning, hypothesis testing, branching, and backtracking. |
+| **`sentry`** | Sentry | `Stdio` | Production error monitoring, breadcrumb trails, source-mapped stack traces, and regression triage. |
+| **`brave-search`** | Brave Software | `Stdio` | Privacy-focused live web and local news searches against the independent Brave Index. |
 | **`chrome-devtools`** | Chrome DevTools MCP | `Stdio` | Real-time browser debugging, console logs, network error tracking, and Core Web Vitals analysis. |
 | **`sqlite`** | Model Context Protocol | `Stdio` | Direct SQL inspection, schema analysis, and query execution on SQLite databases. |
 | **`postgres`** | Model Context Protocol | `Stdio` | Production PostgreSQL database introspection, query tuning, and index analysis. |
@@ -96,10 +101,11 @@ Connect these leading Model Context Protocol tools directly to your Antigravity 
 | **`context7`** | Upstash Context7 | `HTTP` | Live, real-time documentation retrieval for modern libraries and SDKs. |
 | **`firebase`** | Google Firebase | `Stdio` | Manage Firestore databases, Cloud Functions, and Firebase Auth rules. |
 | **`github`** | GitHub Copilot | `HTTP` | Automated issue creation, pull request generation, and repository querying. |
+| **`gitlab`** | GitLab DevOps | `HTTP` | Merge requests, repository management, CI/CD pipeline triggers, and issue tracking. |
 | **`linear`** | Linear App | `HTTP` | Issue management, sprint cycle planning, and project roadmap updates. |
 | **`serena`** | Serena Codebase | `Stdio` | Semantic symbol graphing, reference mapping, and codebase exploration. |
 | **`terraform`** | HashiCorp Terraform | `Stdio (Docker)` | Infrastructure-as-code linting, validation, and cloud state planning. |
-| **`shadcn`** | Shadcn UI | `Stdio` | Direct CLI scaffolding of modern Tailwind CSS & React UI components. |
+| **`shadcn`** | Shadcn UI | `Stdio` | Direct CLI scaffolding of modern Tailwind CSS & React UI components and blocks. |
 | **`firecrawl`** | Firecrawl | `Stdio` | LLM web scraping, recursive domain crawling, clean markdown extraction, and site mapping. |
 | **`figma`** | Figma | `HTTP` | Inspect Figma design files, auto-layouts, tokens, and convert design nodes to clean React/Tailwind code. |
 | **`supabase`** | Supabase | `Stdio` | Cloud Postgres management, schema migrations, Row-Level Security (RLS), and Edge Functions. |
@@ -109,6 +115,9 @@ Connect these leading Model Context Protocol tools directly to your Antigravity 
 | **`miro`** | Miro Whiteboard | `Stdio` | Digital whiteboard collaboration, sticky notes, diagram shapes, and workshop canvases. |
 | **`selenium`** | Selenium WebDriver | `Stdio` | Automated cross-browser compatibility testing, DOM interaction, and accessibility checks. |
 | **`flutter`** | Flutter App Development | `Stdio` | Run mobile/web Flutter apps, execute integration tests, and capture frame screenshots. |
+| **`laravel-boost`** | Laravel Boost | `Stdio` | Laravel artisan assistant, route analysis, schema inspection, and queue debugging. |
+| **`discord`** | Discord Channel | `Stdio` | Discord messaging channel bridge with built-in channel access controls. |
+| **`telegram`** | Telegram Channel | `Stdio` | Telegram messaging channel bridge with pair security and access controls. |
 
 ### Enable Unified MCP Globally
 
