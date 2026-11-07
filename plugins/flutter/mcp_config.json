@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "flutter": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-flutter"
+      ],
+      "env": {}
+    }
+  }
+}

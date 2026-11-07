@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="grad_storybook" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4785" />
+      <stop offset="100%" stop-color="#BC1C5C" />
+    </linearGradient>
+    <filter id="shadow_storybook" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect x="14" y="14" width="100" height="100" rx="24" fill="url(#grad_storybook)" filter="url(#shadow_storybook)" />
+  <path d="M46 36H78C82 36 86 40 86 44V88C86 92 82 96 78 96H46C42 96 38 92 38 88V44C38 40 42 36 46 36Z" fill="#FFFFFF" fill-opacity="0.95"/>
+  <path d="M46 44H78V52H46V44ZM46 58H78V66H46V58ZM46 72H68V80H46V72Z" fill="#FF4785"/>
+</svg>

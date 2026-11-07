@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "miro": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@llmindset/mcp-miro"
+      ],
+      "env": {
+        "MIRO_OAUTH_TOKEN": "${MIRO_OAUTH_TOKEN}"
+      }
+    }
+  }
+}

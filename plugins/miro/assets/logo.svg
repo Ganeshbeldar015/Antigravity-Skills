@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="grad_miro" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD02F" />
+      <stop offset="100%" stop-color="#E5A600" />
+    </linearGradient>
+    <filter id="shadow_miro" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="14" y="14" width="100" height="100" rx="24" fill="url(#grad_miro)" filter="url(#shadow_miro)" />
+  <path d="M42 42L54 86L64 54L76 86L88 42" stroke="#050038" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

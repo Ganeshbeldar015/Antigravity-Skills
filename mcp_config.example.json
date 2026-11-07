@@ -157,6 +157,40 @@
       "env": {
         "SUPABASE_ACCESS_TOKEN": "${SUPABASE_ACCESS_TOKEN}"
       }
+    },
+    "storybook": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "storybook-mcp"
+      ],
+      "env": {}
+    },
+    "miro": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@llmindset/mcp-miro"
+      ],
+      "env": {
+        "MIRO_OAUTH_TOKEN": "${MIRO_OAUTH_TOKEN}"
+      }
+    },
+    "selenium": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@angiejones/mcp-selenium"
+      ],
+      "env": {}
+    },
+    "flutter": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-flutter"
+      ],
+      "env": {}
     }
   }
 }

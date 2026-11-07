@@ -614,6 +614,31 @@
       }
     },
     {
+      "name": "flutter",
+      "displayName": "Flutter App Development",
+      "description": "Flutter MCP server integration by Anton Malofeev. Execute Flutter CLI commands, run mobile/web apps, execute tests, and capture screenshots directly via MCP.",
+      "version": "1.0.0",
+      "source": "./plugins/flutter",
+      "logo": "plugins/flutter/assets/logo.svg",
+      "suggestedPrompts": [
+        "Execute Flutter pub get and dependency resolution",
+        "Run Flutter integration tests and analyze results",
+        "Capture screenshot of running Flutter app",
+        "Execute Flutter build and inspect generated mobile assets"
+      ],
+      "capabilities": {
+        "skills": [
+          "flutter-dev"
+        ],
+        "agents": [
+          "flutter-engineer"
+        ],
+        "hasMcp": true,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
       "name": "frontend-design",
       "displayName": "Frontend Design",
       "description": "Frontend design skill for UI/UX implementation",
@@ -970,6 +995,31 @@
       }
     },
     {
+      "name": "miro",
+      "displayName": "Miro Visual Whiteboard",
+      "description": "Miro MCP server integration by evalstate. Connects AI agents to Miro whiteboard boards for visual brainstorming, sticky notes, diagramming, and collaborative workshops.",
+      "version": "1.0.0",
+      "source": "./plugins/miro",
+      "logo": "plugins/miro/assets/logo.svg",
+      "suggestedPrompts": [
+        "Create sticky notes and organize brainstorming ideas on a Miro board",
+        "Generate visual diagram shapes and user journey flowcharts",
+        "Retrieve board items and frames for retrospective analysis",
+        "Bulk create workshop items and user story maps on Miro"
+      ],
+      "capabilities": {
+        "skills": [
+          "miro-whiteboard"
+        ],
+        "agents": [
+          "whiteboard-facilitator"
+        ],
+        "hasMcp": true,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
       "name": "php-lsp",
       "displayName": "PHP Language Server (Intelephense)",
       "description": "PHP language server integration for PHP and Laravel projects in Google Antigravity.",
@@ -1217,6 +1267,31 @@
       }
     },
     {
+      "name": "selenium",
+      "displayName": "Selenium WebDriver",
+      "description": "Selenium WebDriver MCP server by Angie Jones. Automated cross-browser testing, DOM interaction, element navigation, and web accessibility verification.",
+      "version": "1.0.0",
+      "source": "./plugins/selenium",
+      "logo": "plugins/selenium/assets/logo.svg",
+      "suggestedPrompts": [
+        "Launch a Selenium browser session and navigate to a URL",
+        "Find DOM elements, click, and submit input forms",
+        "Capture screenshots and verify cross-browser styling consistency",
+        "Perform automated UI interaction and accessibility validation"
+      ],
+      "capabilities": {
+        "skills": [
+          "selenium-automation"
+        ],
+        "agents": [
+          "cross-browser-tester"
+        ],
+        "hasMcp": true,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
       "name": "serena",
       "displayName": "Serena",
       "description": "Semantic code analysis MCP server providing intelligent code understanding, refactoring suggestions, and codebase navigation through language server protocol integration.",
@@ -1301,6 +1376,31 @@
         ],
         "agents": [],
         "hasMcp": false,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
+      "name": "storybook",
+      "displayName": "Storybook Design System",
+      "description": "Storybook MCP server integration by Danny Williams. Connects AI agents to component libraries, stories, and docs to prevent UI hallucination and enforce real component reuse.",
+      "version": "1.0.0",
+      "source": "./plugins/storybook",
+      "logo": "plugins/storybook/assets/logo.svg",
+      "suggestedPrompts": [
+        "Discover existing components and stories in Storybook",
+        "Inspect component props, variants, and documentation stories",
+        "Compose a new UI section reusing verified Storybook components",
+        "Generate Storybook stories for new UI elements"
+      ],
+      "capabilities": {
+        "skills": [
+          "storybook-guide"
+        ],
+        "agents": [
+          "storybook-specialist"
+        ],
+        "hasMcp": true,
         "hasHooks": false,
         "hasRules": true
       }

@@ -1,0 +1,13 @@
+{
+  "name": "selenium",
+  "displayName": "Selenium WebDriver",
+  "description": "Selenium WebDriver MCP server by Angie Jones. Automated cross-browser testing, DOM interaction, element navigation, and web accessibility verification.",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Launch a Selenium browser session and navigate to a URL",
+    "Find DOM elements, click, and submit input forms",
+    "Capture screenshots and verify cross-browser styling consistency",
+    "Perform automated UI interaction and accessibility validation"
+  ]
+}

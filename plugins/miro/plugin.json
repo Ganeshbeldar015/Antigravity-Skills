@@ -1,0 +1,13 @@
+{
+  "name": "miro",
+  "displayName": "Miro Visual Whiteboard",
+  "description": "Miro MCP server integration by evalstate. Connects AI agents to Miro whiteboard boards for visual brainstorming, sticky notes, diagramming, and collaborative workshops.",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Create sticky notes and organize brainstorming ideas on a Miro board",
+    "Generate visual diagram shapes and user journey flowcharts",
+    "Retrieve board items and frames for retrospective analysis",
+    "Bulk create workshop items and user story maps on Miro"
+  ]
+}

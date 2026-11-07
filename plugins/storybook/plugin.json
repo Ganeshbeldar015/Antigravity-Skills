@@ -1,0 +1,13 @@
+{
+  "name": "storybook",
+  "displayName": "Storybook Design System",
+  "description": "Storybook MCP server integration by Danny Williams. Connects AI agents to component libraries, stories, and docs to prevent UI hallucination and enforce real component reuse.",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Discover existing components and stories in Storybook",
+    "Inspect component props, variants, and documentation stories",
+    "Compose a new UI section reusing verified Storybook components",
+    "Generate Storybook stories for new UI elements"
+  ]
+}
