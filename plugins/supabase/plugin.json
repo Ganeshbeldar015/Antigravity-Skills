@@ -1,0 +1,13 @@
+{
+  "name": "supabase",
+  "displayName": "Supabase Cloud & Postgres",
+  "description": "Official Supabase MCP integration. Connects Antigravity to Supabase cloud projects for Postgres schema migrations, database inspection, edge functions, and Row-Level Security (RLS) policies.",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Inspect Supabase Postgres database tables and relations",
+    "Generate idempotent SQL schema migrations with Row Level Security",
+    "Configure Supabase Auth providers and user role policies",
+    "Deploy and test Supabase Edge Functions"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "figma",
+  "displayName": "Figma Design Connect",
+  "description": "Official Figma MCP integration. Connect AI agents directly to Figma files, inspect design tokens, extract vector components, and convert design nodes to clean React/HTML code.",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Inspect Figma design frames and component properties",
+    "Convert a Figma frame into clean React and Tailwind CSS components",
+    "Extract design tokens, color variables, and typography styles from a Figma file",
+    "Generate responsive layouts matching Figma auto-layout constraints"
+  ]
+}

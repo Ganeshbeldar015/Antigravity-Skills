@@ -1,0 +1,13 @@
+{
+  "name": "firecrawl",
+  "displayName": "Firecrawl Web Scraper",
+  "description": "Official Firecrawl MCP server for AI agents. Scrape web pages, crawl entire websites, execute search, map site architectures, and extract clean structured Markdown.",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Scrape clean markdown content from a documentation URL",
+    "Crawl all pages under a website domain and extract structured data",
+    "Map all sub-URLs and site architecture without downloading full bodies",
+    "Perform deep web search and extract answer summaries"
+  ]
+}

@@ -6,10 +6,10 @@
 
 <p>
   <a href="https://antigravity.google.com"><img src="https://img.shields.io/badge/Antigravity-2.0%2B%20Compatible-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity 2.0" /></a>
-  <a href="./plugins"><img src="https://img.shields.io/badge/Plugins-58%20Verified-34A853?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Plugins" /></a>
-  <a href="./plugins"><img src="https://img.shields.io/badge/Skills-84%20Active-FBBC05?style=for-the-badge&logo=codewars&logoColor=white" alt="Skills" /></a>
-  <a href="./plugins"><img src="https://img.shields.io/badge/Subagents-40%20Specialized-EA4335?style=for-the-badge&logo=robot-framework&logoColor=white" alt="Subagents" /></a>
-  <a href="./mcp_config.example.json"><img src="https://img.shields.io/badge/MCP%20Servers-18%20Integrated-9C27B0?style=for-the-badge&logo=graphql&logoColor=white" alt="MCP Servers" /></a>
+  <a href="./plugins"><img src="https://img.shields.io/badge/Plugins-62%20Verified-34A853?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Plugins" /></a>
+  <a href="./plugins"><img src="https://img.shields.io/badge/Skills-89%20Active-FBBC05?style=for-the-badge&logo=codewars&logoColor=white" alt="Skills" /></a>
+  <a href="./plugins"><img src="https://img.shields.io/badge/Subagents-44%20Specialized-EA4335?style=for-the-badge&logo=robot-framework&logoColor=white" alt="Subagents" /></a>
+  <a href="./mcp_config.example.json"><img src="https://img.shields.io/badge/MCP%20Servers-21%20Integrated-9C27B0?style=for-the-badge&logo=graphql&logoColor=white" alt="MCP Servers" /></a>
   <a href="./scripts/test_plugins.py"><img src="https://img.shields.io/badge/Validation-100%25%20Passed-00C853?style=for-the-badge" alt="Tests" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License" /></a>
 </p>
@@ -24,7 +24,7 @@
 
 ## ✨ Overview
 
-**`Antigravity-Skills`** is a curated, production-tested suite of **58 official-grade plugins** built to extend Google Antigravity.
+**`Antigravity-Skills`** is a curated, production-tested suite of **62 official-grade plugins** built to extend Google Antigravity.
 
 It elevates your AI pair-programming assistant into a specialized team of software architects, database engineers, security auditors, automated QA engineers, and design leads.
 
@@ -32,10 +32,10 @@ It elevates your AI pair-programming assistant into a specialized team of softwa
 
 | Capability | Details |
 | :--- | :--- |
-| **🧩 58 Verified Plugins** | Modular bundles encompassing skills, rules, subagents, and MCP configurations. |
-| **🎯 84 On-Demand Skills** | Progressive disclosure runbooks loaded strictly when triggered to conserve context window tokens. |
-| **🤖 40 Autonomous Subagents** | Role-specialized agents (`code-reviewer`, `database-architect`, `devops-engineer`, `performance-auditor`, `ui-component-engineer`, `security-auditor`) running on Flash & Pro models. |
-| **🔌 18 MCP Tool Servers** | Direct integrations with Shadcn UI, Chrome DevTools, SQLite, PostgreSQL, Docker, Playwright, Firebase, Context7, Serena, GitHub, Linear, and Terraform. |
+| **🧩 62 Verified Plugins** | Modular bundles encompassing skills, rules, subagents, and MCP configurations. |
+| **🎯 89 On-Demand Skills** | Progressive disclosure runbooks loaded strictly when triggered to conserve context window tokens. |
+| **🤖 44 Autonomous Subagents** | Role-specialized agents (`code-reviewer`, `database-architect`, `devops-engineer`, `performance-auditor`, `ui-component-engineer`, `web-designer`, `supabase-architect`) running on Flash & Pro models. |
+| **🔌 21 MCP Tool Servers** | Direct integrations with Firecrawl, Figma, Supabase, Shadcn UI, Chrome DevTools, SQLite, PostgreSQL, Docker, Playwright, Firebase, Context7, Serena, GitHub, Linear, and Terraform. |
 | **🚀 Universal Installer** | Included CLI installer (`scripts/install.py`) supporting both global (`~/.gemini/config/plugins/`) and project-scoped (`.agents/plugins/`) setups. |
 | **✅ 100% Automated Testing** | Automated schema, YAML frontmatter, path resolution, and syntax validation suite passing at 100%. |
 
@@ -45,14 +45,14 @@ It elevates your AI pair-programming assistant into a specialized team of softwa
 
 ### 1. Global Installation (Recommended)
 
-Install all 58 plugins globally across your machine so they are immediately active in **every** project:
+Install all 62 plugins globally across your machine so they are immediately active in **every** project:
 
 ```bash
 # Clone the repository
 git clone https://github.com/Ganeshbeldar015/Antigravity-Skills.git
 cd Antigravity-Skills
 
-# Install and register all 58 plugins globally
+# Install and register all 62 plugins globally
 python scripts/install.py --all --scope global
 ```
 
@@ -68,7 +68,7 @@ python <path-to-Antigravity-Skills>/scripts/install.py database-tools --scope pr
 ### 3. Interactive CLI Commands
 
 ```bash
-# List all 58 plugins with versions and summaries
+# List all 62 plugins with versions and summaries
 python scripts/install.py --list
 
 # Inspect all plugins providing MCP servers and their transport types
@@ -100,6 +100,9 @@ Connect these leading Model Context Protocol tools directly to your Antigravity 
 | **`serena`** | Serena Codebase | `Stdio` | Semantic symbol graphing, reference mapping, and codebase exploration. |
 | **`terraform`** | HashiCorp Terraform | `Stdio (Docker)` | Infrastructure-as-code linting, validation, and cloud state planning. |
 | **`shadcn`** | Shadcn UI | `Stdio` | Direct CLI scaffolding of modern Tailwind CSS & React UI components. |
+| **`firecrawl`** | Firecrawl | `Stdio` | LLM web scraping, recursive domain crawling, clean markdown extraction, and site mapping. |
+| **`figma`** | Figma | `HTTP` | Inspect Figma design files, auto-layouts, tokens, and convert design nodes to clean React/Tailwind code. |
+| **`supabase`** | Supabase | `Stdio` | Cloud Postgres management, schema migrations, Row-Level Security (RLS), and Edge Functions. |
 | **`canva`** | Canva | `HTTP / Bridge` | Fetch design templates, visual assets, brand kits, and graphics generation. |
 | **`21st`** | 21st.dev | `HTTP / Bridge` | Curated Tailwind/React UI blocks, themes, and design component inspiration. |
 
@@ -178,12 +181,15 @@ cp mcp_config.example.json ~/.gemini/config/mcp_config.json
 </details>
 
 <details open>
-<summary><h3>🌐 MCP Servers, Browser DevTools & Cloud (18 Plugins)</h3></summary>
+<summary><h3>🌐 MCP Servers, Browser DevTools & Cloud (21 Plugins)</h3></summary>
 
 > *Model Context Protocol (MCP) bridges connecting Antigravity directly to Chrome DevTools, Playwright headless browser automation, cloud databases, issue trackers, and external developer platforms.*
 
 | Plugin | Version | Contained Skills | Subagents | MCP | Description |
 | :--- | :---: | :--- | :--- | :---: | :--- |
+| **[`firecrawl`](./plugins/firecrawl)** | `1.0.0` | • <code>firecrawl-scraper</code> | • <code>web-crawler</code> | ⚡ <b>Yes</b> | Official Firecrawl web scraper, crawler, and clean markdown extractor MCP server for AI agents. |
+| **[`figma`](./plugins/figma)** | `1.0.0` | • <code>figma-design-to-code</code> | • <code>figma-inspector</code> | ⚡ <b>Yes</b> | Official Figma MCP integration. Inspect design tokens, auto-layouts, and convert design nodes to React/Tailwind. |
+| **[`supabase`](./plugins/supabase)** | `1.0.0` | • <code>supabase-expert</code> | • <code>supabase-architect</code> | ⚡ <b>Yes</b> | Official Supabase MCP integration. Manage cloud Postgres, schema migrations, RLS policies, and Edge Functions. |
 | **[`shadcn`](./plugins/shadcn)** | `1.0.0` | • <code>shadcn-ui</code> | • <code>ui-component-engineer</code> | ⚡ <b>Yes</b> | Scaffold and integrate modern React UI components, blocks, and design systems from Shadcn UI & React Bits registries. |
 | **[`chrome-devtools`](./plugins/chrome-devtools)** | `1.0.0` | • <code>browser-debugger</code><br/>• <code>web-vitals-profiler</code> | • <code>performance-auditor</code> | ⚡ <b>Yes</b> | Real-time browser debugging and web performance profiling using Chrome DevTools MCP: inspect co... |
 | **[`playwright`](./plugins/playwright)** | `1.0.0` | — | — | ⚡ <b>Yes</b> | Browser automation and end-to-end testing MCP server by Microsoft. Enables Antigravity to inter... |
@@ -206,12 +212,13 @@ cp mcp_config.example.json ~/.gemini/config/mcp_config.json
 </details>
 
 <details open>
-<summary><h3>🎨 Design, Mathematics & Reasoning (10 Plugins)</h3></summary>
+<summary><h3>🎨 Design, Mathematics & Reasoning (11 Plugins)</h3></summary>
 
 > *Tailored frontend UI/UX design engines, live interactive HTML playgrounds, mathematical Olympiad problem-solvers, and transparent telemetry reporters.*
 
 | Plugin | Version | Contained Skills | Subagents | MCP | Description |
 | :--- | :---: | :--- | :--- | :---: | :--- |
+| **[`web-design`](./plugins/web-design)** | `1.0.0` | • <code>web-design</code><br/>• <code>ux-ui</code> | • <code>web-designer</code> | — | Web graphic design, UI/UX systems, layouts, typography, and visual styling (Bauhaus, Pop Art, Retro, Futuristic). |
 | **[`frontend-design`](./plugins/frontend-design)** | `1.0.0` | • <code>frontend-design</code> | — | — | Frontend design skill for UI/UX implementation |
 | **[`project-artifact`](./plugins/project-artifact)** | `1.0.0` | • <code>project-artifact</code> | — | — | Generate and publish a project status artifact — an opinionated, tabbed status page (overview &... |
 | **[`playground`](./plugins/playground)** | `1.0.0` | • <code>playground</code> | — | — | Creates interactive HTML playgrounds — self-contained single-file explorers with visual control... |
@@ -236,9 +243,9 @@ flowchart TD
     U["User Request / Task"]
     CLI["Google Antigravity CLI / IDE"]
     PD{"Progressive Disclosure Evaluator"}
-    SK["On-Demand Skills (84 Active Runbooks)"]
-    AG["Autonomous Subagents (40 Specialized)"]
-    MCP["MCP Servers (Shadcn, Chrome DevTools, SQLite, Docker, Playwright)"]
+    SK["On-Demand Skills (89 Active Runbooks)"]
+    AG["Autonomous Subagents (44 Specialized)"]
+    MCP["MCP Servers (Firecrawl, Figma, Supabase, Shadcn, Chrome DevTools, Playwright)"]
     RES["Clean Output / Verified Code Changes"]
 
     U --> CLI
@@ -282,8 +289,8 @@ python scripts/test_plugins.py
 
 - [x] **Schema Validation**: Validates all `plugin.json` and `marketplace.json` manifests against Antigravity specifications.
 - [x] **YAML Frontmatter Integrity**: Confirms every `SKILL.md` defines required `name` and `description` triggers.
-- [x] **Agent Definitions**: Checks all 40 subagent `.md` files for supported model parameters (`inherit`, `flash`, `pro`).
-- [x] **MCP Transports**: Validates JSON syntax and command/args structures across all 18 `mcp_config.json` files.
+- [x] **Agent Definitions**: Checks all 44 subagent `.md` files for supported model parameters (`inherit`, `flash`, `pro`).
+- [x] **MCP Transports**: Validates JSON syntax and command/args structures across all 21 `mcp_config.json` files.
 - [x] **100% Passed**: Zero warnings, zero dropped plugins.
 
 ---

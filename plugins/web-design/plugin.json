@@ -1,0 +1,13 @@
+{
+  "name": "web-design",
+  "displayName": "Web Design & UX Systems",
+  "description": "Web graphic design, UI/UX systems, layouts, typography, and visual styling (Bauhaus, Pop Art, Retro, Futuristic) by Avi Flombaum (avinyc).",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Design a modern SaaS landing page hero section",
+    "Define a visual hierarchy and typographic scale for a dashboard",
+    "Apply Bauhaus or Retro design aesthetics to UI components",
+    "Audit page layout for accessibility, UX rhythm, and mobile responsiveness"
+  ]
+}

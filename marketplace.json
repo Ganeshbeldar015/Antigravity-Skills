@@ -7,7 +7,7 @@
     "name": "Community",
     "url": "https://github.com/Community/Antigravity-Skills"
   },
-  "totalPlugins": 58,
+  "totalPlugins": 62,
   "plugins": [
     {
       "name": "agent-sdk-dev",
@@ -553,6 +553,31 @@
       }
     },
     {
+      "name": "figma",
+      "displayName": "Figma Design Connect",
+      "description": "Official Figma MCP integration. Connect AI agents directly to Figma files, inspect design tokens, extract vector components, and convert design nodes to clean React/HTML code.",
+      "version": "1.0.0",
+      "source": "./plugins/figma",
+      "logo": "plugins/figma/assets/logo.svg",
+      "suggestedPrompts": [
+        "Inspect Figma design frames and component properties",
+        "Convert a Figma frame into clean React and Tailwind CSS components",
+        "Extract design tokens, color variables, and typography styles from a Figma file",
+        "Generate responsive layouts matching Figma auto-layout constraints"
+      ],
+      "capabilities": {
+        "skills": [
+          "figma-design-to-code"
+        ],
+        "agents": [
+          "figma-inspector"
+        ],
+        "hasMcp": true,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
       "name": "firebase",
       "displayName": "Firebase",
       "description": "Google Firebase MCP integration. Manage Firestore databases, authentication, cloud functions, hosting, and storage. Build and manage your Firebase backend directly from your development workflow.",
@@ -567,6 +592,31 @@
       "capabilities": {
         "skills": [],
         "agents": [],
+        "hasMcp": true,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
+      "name": "firecrawl",
+      "displayName": "Firecrawl Web Scraper",
+      "description": "Official Firecrawl MCP server for AI agents. Scrape web pages, crawl entire websites, execute search, map site architectures, and extract clean structured Markdown.",
+      "version": "1.0.0",
+      "source": "./plugins/firecrawl",
+      "logo": "plugins/firecrawl/assets/logo.svg",
+      "suggestedPrompts": [
+        "Scrape clean markdown content from a documentation URL",
+        "Crawl all pages under a website domain and extract structured data",
+        "Map all sub-URLs and site architecture without downloading full bodies",
+        "Perform deep web search and extract answer summaries"
+      ],
+      "capabilities": {
+        "skills": [
+          "firecrawl-scraper"
+        ],
+        "agents": [
+          "web-crawler"
+        ],
         "hasMcp": true,
         "hasHooks": false,
         "hasRules": true
@@ -1265,6 +1315,31 @@
       }
     },
     {
+      "name": "supabase",
+      "displayName": "Supabase Cloud & Postgres",
+      "description": "Official Supabase MCP integration. Connects Antigravity to Supabase cloud projects for Postgres schema migrations, database inspection, edge functions, and Row-Level Security (RLS) policies.",
+      "version": "1.0.0",
+      "source": "./plugins/supabase",
+      "logo": "plugins/supabase/assets/logo.svg",
+      "suggestedPrompts": [
+        "Inspect Supabase Postgres database tables and relations",
+        "Generate idempotent SQL schema migrations with Row Level Security",
+        "Configure Supabase Auth providers and user role policies",
+        "Deploy and test Supabase Edge Functions"
+      ],
+      "capabilities": {
+        "skills": [
+          "supabase-expert"
+        ],
+        "agents": [
+          "supabase-architect"
+        ],
+        "hasMcp": true,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
       "name": "swift-lsp",
       "displayName": "Swift Language Server (SourceKit-LSP)",
       "description": "SourceKit-LSP language server for Swift and Apple platform development in Google Antigravity.",
@@ -1346,6 +1421,32 @@
           "typescript-lsp"
         ],
         "agents": [],
+        "hasMcp": false,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
+      "name": "web-design",
+      "displayName": "Web Design & UX Systems",
+      "description": "Web graphic design, UI/UX systems, layouts, typography, and visual styling (Bauhaus, Pop Art, Retro, Futuristic) by Avi Flombaum (avinyc).",
+      "version": "1.0.0",
+      "source": "./plugins/web-design",
+      "logo": "plugins/web-design/assets/logo.svg",
+      "suggestedPrompts": [
+        "Design a modern SaaS landing page hero section",
+        "Define a visual hierarchy and typographic scale for a dashboard",
+        "Apply Bauhaus or Retro design aesthetics to UI components",
+        "Audit page layout for accessibility, UX rhythm, and mobile responsiveness"
+      ],
+      "capabilities": {
+        "skills": [
+          "ux-ui",
+          "web-design"
+        ],
+        "agents": [
+          "web-designer"
+        ],
         "hasMcp": false,
         "hasHooks": false,
         "hasRules": true
