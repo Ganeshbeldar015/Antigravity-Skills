@@ -1,0 +1,13 @@
+{
+  "name": "shadcn",
+  "displayName": "Shadcn & React Bits",
+  "description": "Scaffold and integrate modern React UI components, blocks, and design systems directly from Shadcn UI, React Bits Starter, and React Bits Pro registries via MCP.",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Search available components in @shadcn and @reactbits-starter registries",
+    "Install a responsive navbar and hero block from the registry",
+    "View component usage examples and dependencies for @shadcn/button",
+    "Run UI audit checklist on generated components"
+  ]
+}

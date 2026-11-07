@@ -1,13 +1,13 @@
 {
   "$schema": "https://antigravity.google.com/marketplace.schema.json",
-  "name": "antigravity-skills",
-  "displayName": "Google Antigravity Plugins & Skills Hub",
+  "name": "google-antigravity-plugins",
+  "displayName": "Google Antigravity Plugins Directory",
   "description": "Comprehensive, production-ready plugins and skills directory for Google Antigravity.",
   "owner": {
-    "name": "Ganeshbeldar015",
-    "url": "https://github.com/Ganeshbeldar015/Antigravity-Skills"
+    "name": "Community",
+    "url": "https://github.com/Community/Antigravity-Skills"
   },
-  "totalPlugins": 57,
+  "totalPlugins": 58,
   "plugins": [
     {
       "name": "agent-sdk-dev",
@@ -147,7 +147,7 @@
     {
       "name": "asana",
       "displayName": "Asana",
-      "description": "Asana project management integration. Connects Google Antigravity to Asana's V2 MCP server (https://mcp.asana.com/v2/mcp) to create and manage tasks, search projects, update assignments, and track progress. Requires a one-time setup of your own Asana OAuth app \u2014 run /asana-setup after installing.",
+      "description": "Asana project management integration. Connects Google Antigravity to Asana's V2 MCP server (https://mcp.asana.com/v2/mcp) to create and manage tasks, search projects, update assignments, and track progress. Requires a one-time setup of your own Asana OAuth app — run /asana-setup after installing.",
       "version": "1.0.0",
       "source": "./plugins/asana",
       "logo": "plugins/asana/assets/logo.svg",
@@ -162,6 +162,31 @@
         ],
         "agents": [],
         "hasMcp": false,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
+      "name": "chrome-devtools",
+      "displayName": "Chrome DevTools",
+      "description": "Real-time browser debugging and web performance profiling using Chrome DevTools MCP: inspect console errors, network latency, and Core Web Vitals.",
+      "version": "1.0.0",
+      "source": "./plugins/chrome-devtools",
+      "logo": "plugins/chrome-devtools/assets/logo.svg",
+      "suggestedPrompts": [
+        "Debug browser console errors and failed network API requests",
+        "Audit Web Vitals and identify Largest Contentful Paint (LCP) bottlenecks",
+        "Inspect live DOM elements and compute CSS layout shifts"
+      ],
+      "capabilities": {
+        "skills": [
+          "browser-debugger",
+          "web-vitals-profiler"
+        ],
+        "agents": [
+          "performance-auditor"
+        ],
+        "hasMcp": true,
         "hasHooks": false,
         "hasRules": true
       }
@@ -302,7 +327,7 @@
     {
       "name": "context7",
       "displayName": "Context7",
-      "description": "Upstash Context7 MCP server for up-to-date documentation lookup. Connects to Context7's hosted remote MCP server (https://mcp.context7.com/mcp) \u2014 no local Node.js or npx required \u2014 to pull version-specific documentation and code examples directly from source repositories into your LLM context. Authenticate with Context7 when prompted.",
+      "description": "Upstash Context7 MCP server for up-to-date documentation lookup. Connects to Context7's hosted remote MCP server (https://mcp.context7.com/mcp) — no local Node.js or npx required — to pull version-specific documentation and code examples directly from source repositories into your LLM context. Authenticate with Context7 when prompted.",
       "version": "1.0.0",
       "source": "./plugins/context7",
       "logo": "plugins/context7/assets/logo.svg",
@@ -366,9 +391,34 @@
       }
     },
     {
+      "name": "database-tools",
+      "displayName": "Database Tools",
+      "description": "Production database engineering toolkit: schema design, SQL query optimization, migration automation, and SQLite/PostgreSQL MCP inspection.",
+      "version": "1.0.0",
+      "source": "./plugins/database-tools",
+      "logo": "plugins/database-tools/assets/logo.svg",
+      "suggestedPrompts": [
+        "Design normalized relational database schema with migrations",
+        "Optimize slow SQL query and analyze EXPLAIN execution plan",
+        "Inspect SQLite or PostgreSQL database using MCP tools"
+      ],
+      "capabilities": {
+        "skills": [
+          "query-optimizer",
+          "schema-architect"
+        ],
+        "agents": [
+          "database-architect"
+        ],
+        "hasMcp": true,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
       "name": "discord",
       "displayName": "Discord",
-      "description": "Discord channel for Google Antigravity \u2014 messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /discord:access.",
+      "description": "Discord channel for Google Antigravity — messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /discord:access.",
       "version": "0.0.4",
       "source": "./plugins/discord",
       "logo": "plugins/discord/assets/logo.svg",
@@ -383,6 +433,31 @@
           "configure"
         ],
         "agents": [],
+        "hasMcp": true,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
+      "name": "docker-devops",
+      "displayName": "Docker DevOps",
+      "description": "Docker containerization and Compose orchestration toolkit: multi-stage build optimization, security hardening, and environment parity.",
+      "version": "1.0.0",
+      "source": "./plugins/docker-devops",
+      "logo": "plugins/docker-devops/assets/logo.svg",
+      "suggestedPrompts": [
+        "Optimize multi-stage Dockerfile for minimal image footprint",
+        "Create production-ready Docker Compose stack with healthchecks",
+        "Audit container configuration for security vulnerabilities"
+      ],
+      "capabilities": {
+        "skills": [
+          "compose-architect",
+          "dockerfile-optimizer"
+        ],
+        "agents": [
+          "devops-engineer"
+        ],
         "hasMcp": true,
         "hasHooks": false,
         "hasRules": true
@@ -434,7 +509,7 @@
     {
       "name": "fakechat",
       "displayName": "Fakechat",
-      "description": "Localhost iMessage-style web chat for Google Antigravity \u2014 test surface with file upload and edits. No tokens, no access control.",
+      "description": "Localhost iMessage-style web chat for Google Antigravity — test surface with file upload and edits. No tokens, no access control.",
       "version": "0.0.1",
       "source": "./plugins/fakechat",
       "logo": "plugins/fakechat/assets/logo.svg",
@@ -612,7 +687,7 @@
     {
       "name": "imessage",
       "displayName": "Imessage",
-      "description": "iMessage channel for Google Antigravity \u2014 reads chat.db directly, sends via AppleScript. Built-in access control; manage pairing, allowlists, and policy via /imessage:access.",
+      "description": "iMessage channel for Google Antigravity — reads chat.db directly, sends via AppleScript. Built-in access control; manage pairing, allowlists, and policy via /imessage:access.",
       "version": "0.2.0",
       "source": "./plugins/imessage",
       "logo": "plugins/imessage/assets/logo.svg",
@@ -810,7 +885,7 @@
     {
       "name": "mcp-server-dev",
       "displayName": "Mcp Server Dev",
-      "description": "Skills for designing and building MCP servers that work seamlessly with Antigravity \u2014 guides you through deployment models (remote HTTP, MCPB, local), tool design patterns, auth, and interactive MCP apps.",
+      "description": "Skills for designing and building MCP servers that work seamlessly with Antigravity — guides you through deployment models (remote HTTP, MCPB, local), tool design patterns, auth, and interactive MCP apps.",
       "version": "1.0.0",
       "source": "./plugins/mcp-server-dev",
       "logo": "plugins/mcp-server-dev/assets/logo.svg",
@@ -878,7 +953,7 @@
     {
       "name": "playground",
       "displayName": "Playground",
-      "description": "Creates interactive HTML playgrounds \u2014 self-contained single-file explorers with visual controls, live preview, and prompt output with copy button",
+      "description": "Creates interactive HTML playgrounds — self-contained single-file explorers with visual controls, live preview, and prompt output with copy button",
       "version": "1.0.0",
       "source": "./plugins/playground",
       "logo": "plugins/playground/assets/logo.svg",
@@ -949,7 +1024,7 @@
     {
       "name": "project-artifact",
       "displayName": "Project Artifact",
-      "description": "Generate and publish a project status artifact \u2014 an opinionated, tabbed status page (overview & success criteria, the workstream sequence, next steps, plus background / plan / risks & open questions / decisions-FAQ when they earn a tab) published via the built-in Artifact tool to a default-private claude.ai page the user can share with teammates. Each artifact is backed by a per-project config, so 'refresh the artifact' re-gathers live state, redeploys the same URL, and reports only the delta. Domain-neutral, with a software specialization for projects whose workstreams are pull requests. Needs the built-in Artifact tool (claude.ai login).",
+      "description": "Generate and publish a project status artifact — an opinionated, tabbed status page (overview & success criteria, the workstream sequence, next steps, plus background / plan / risks & open questions / decisions-FAQ when they earn a tab) published via the built-in Artifact tool to a default-private claude.ai page the user can share with teammates. Each artifact is backed by a per-project config, so 'refresh the artifact' re-gathers live state, redeploys the same URL, and reports only the delta. Domain-neutral, with a software specialization for projects whose workstreams are pull requests. Needs the built-in Artifact tool (claude.ai login).",
       "version": "1.0.0",
       "source": "./plugins/project-artifact",
       "logo": "plugins/project-artifact/assets/logo.svg",
@@ -1143,6 +1218,31 @@
       }
     },
     {
+      "name": "shadcn",
+      "displayName": "Shadcn & React Bits",
+      "description": "Scaffold and integrate modern React UI components, blocks, and design systems directly from Shadcn UI, React Bits Starter, and React Bits Pro registries via MCP.",
+      "version": "1.0.0",
+      "source": "./plugins/shadcn",
+      "logo": "plugins/shadcn/assets/logo.svg",
+      "suggestedPrompts": [
+        "Search available components in @shadcn and @reactbits-starter registries",
+        "Install a responsive navbar and hero block from the registry",
+        "View component usage examples and dependencies for @shadcn/button",
+        "Run UI audit checklist on generated components"
+      ],
+      "capabilities": {
+        "skills": [
+          "shadcn-ui"
+        ],
+        "agents": [
+          "ui-component-engineer"
+        ],
+        "hasMcp": true,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
       "name": "skill-creator",
       "displayName": "Skill Creator",
       "description": "Create new skills, improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, update or optimize an existing skill, run evals to test a skill, or benchmark skill performance with variance analysis.",
@@ -1189,7 +1289,7 @@
     {
       "name": "telegram",
       "displayName": "Telegram",
-      "description": "Telegram channel for Google Antigravity \u2014 messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /telegram:access.",
+      "description": "Telegram channel for Google Antigravity — messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /telegram:access.",
       "version": "0.0.7",
       "source": "./plugins/telegram",
       "logo": "plugins/telegram/assets/logo.svg",
@@ -1247,81 +1347,6 @@
         ],
         "agents": [],
         "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "database-tools",
-      "displayName": "Database Tools",
-      "description": "Production database engineering toolkit: schema design, SQL query optimization, migration automation, and SQLite/PostgreSQL MCP inspection.",
-      "version": "1.0.0",
-      "source": "./plugins/database-tools",
-      "logo": "plugins/database-tools/assets/logo.svg",
-      "suggestedPrompts": [
-        "Design normalized relational database schema with migrations",
-        "Optimize slow SQL query and analyze EXPLAIN execution plan",
-        "Inspect SQLite or PostgreSQL database using MCP tools"
-      ],
-      "capabilities": {
-        "skills": [
-          "schema-architect",
-          "query-optimizer"
-        ],
-        "agents": [
-          "database-architect"
-        ],
-        "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "docker-devops",
-      "displayName": "Docker DevOps",
-      "description": "Docker containerization and Compose orchestration toolkit: multi-stage build optimization, security hardening, and environment parity.",
-      "version": "1.0.0",
-      "source": "./plugins/docker-devops",
-      "logo": "plugins/docker-devops/assets/logo.svg",
-      "suggestedPrompts": [
-        "Optimize multi-stage Dockerfile for minimal image footprint",
-        "Create production-ready Docker Compose stack with healthchecks",
-        "Audit container configuration for security vulnerabilities"
-      ],
-      "capabilities": {
-        "skills": [
-          "dockerfile-optimizer",
-          "compose-architect"
-        ],
-        "agents": [
-          "devops-engineer"
-        ],
-        "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "chrome-devtools",
-      "displayName": "Chrome DevTools",
-      "description": "Real-time browser debugging and web performance profiling using Chrome DevTools MCP: inspect console errors, network latency, and Core Web Vitals.",
-      "version": "1.0.0",
-      "source": "./plugins/chrome-devtools",
-      "logo": "plugins/chrome-devtools/assets/logo.svg",
-      "suggestedPrompts": [
-        "Debug browser console errors and failed network API requests",
-        "Audit Web Vitals and identify Largest Contentful Paint (LCP) bottlenecks",
-        "Inspect live DOM elements and compute CSS layout shifts"
-      ],
-      "capabilities": {
-        "skills": [
-          "browser-debugger",
-          "web-vitals-profiler"
-        ],
-        "agents": [
-          "performance-auditor"
-        ],
-        "hasMcp": true,
         "hasHooks": false,
         "hasRules": true
       }
