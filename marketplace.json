@@ -7,7 +7,7 @@
     "name": "Community",
     "url": "https://github.com/Community/Antigravity-Skills"
   },
-  "totalPlugins": 67,
+  "totalPlugins": 71,
   "plugins": [
     {
       "name": "agent-sdk-dev",
@@ -187,6 +187,31 @@
         ],
         "agents": [],
         "hasMcp": false,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
+      "name": "brave-search",
+      "displayName": "Brave Search Live Web Index",
+      "description": "Privacy-focused live web and local news search using the independent Brave Search Index via official Brave Search MCP.",
+      "version": "1.0.0",
+      "source": "./plugins/brave-search",
+      "logo": "plugins/brave-search/assets/logo.svg",
+      "suggestedPrompts": [
+        "Search for the latest CVE security advisories and breaking updates",
+        "Find recent benchmark comparisons between runtime releases",
+        "Search documentation and code snippets for new library features",
+        "Look up local business data and real-time news sources"
+      ],
+      "capabilities": {
+        "skills": [
+          "brave-search"
+        ],
+        "agents": [
+          "web-researcher"
+        ],
+        "hasMcp": true,
         "hasHooks": false,
         "hasRules": true
       }
@@ -1326,6 +1351,56 @@
       }
     },
     {
+      "name": "sentry",
+      "displayName": "Sentry Error Monitoring & Debugging",
+      "description": "Inspect live production errors, stack traces, breadcrumbs, release regressions, and telemetry issues via official Sentry MCP.",
+      "version": "1.0.0",
+      "source": "./plugins/sentry",
+      "logo": "plugins/sentry/assets/logo.svg",
+      "suggestedPrompts": [
+        "Fetch latest unresolved Sentry errors in production and correlate with recent deploys",
+        "Inspect the stack trace and breadcrumbs for the top crashing issue in our API",
+        "Identify regressions introduced after the latest release tag",
+        "Propose code fixes for recurring NullPointerExceptions in frontend components"
+      ],
+      "capabilities": {
+        "skills": [
+          "sentry-debugger"
+        ],
+        "agents": [
+          "sentry-investigator"
+        ],
+        "hasMcp": true,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
+      "name": "sequential-thinking",
+      "displayName": "Sequential Thinking & Dynamic Reasoning",
+      "description": "Multi-step chain-of-thought reasoning, hypothesis testing, branching, and adaptive problem-solving via the Sequential Thinking MCP server.",
+      "version": "1.0.0",
+      "source": "./plugins/sequential-thinking",
+      "logo": "plugins/sequential-thinking/assets/logo.svg",
+      "suggestedPrompts": [
+        "Plan a multi-step architectural refactor using sequential thinking",
+        "Debug a race condition by forming and testing multiple hypotheses",
+        "Perform a deep root-cause analysis on an intermittent production failure",
+        "Explore branching design alternatives for a distributed cache system"
+      ],
+      "capabilities": {
+        "skills": [
+          "sequential-thinking"
+        ],
+        "agents": [
+          "deep-reasoner"
+        ],
+        "hasMcp": true,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
       "name": "serena",
       "displayName": "Serena",
       "description": "Semantic code analysis MCP server providing intelligent code understanding, refactoring suggestions, and codebase navigation through language server protocol integration.",
@@ -1433,6 +1508,31 @@
         ],
         "agents": [
           "storybook-specialist"
+        ],
+        "hasMcp": true,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
+      "name": "storyflow",
+      "displayName": "Storyflow Visual Project Workspace",
+      "description": "Visual project management, infinite canvas ideation, Kanban boards, mind maps, and workflow automation via Storyflow MCP.",
+      "version": "1.0.0",
+      "source": "./plugins/storyflow",
+      "logo": "plugins/storyflow/assets/logo.svg",
+      "suggestedPrompts": [
+        "Create a new visual roadmap and Kanban board for our project in Storyflow",
+        "Map user journeys and feature stories onto the Storyflow canvas",
+        "Sync sprint tasks and decision logs with our Storyflow workspace",
+        "Generate an interactive mind map from our system architecture spec"
+      ],
+      "capabilities": {
+        "skills": [
+          "storyflow-workspace"
+        ],
+        "agents": [
+          "storyflow-facilitator"
         ],
         "hasMcp": true,
         "hasHooks": false,

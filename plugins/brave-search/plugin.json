@@ -1,0 +1,13 @@
+{
+  "name": "brave-search",
+  "displayName": "Brave Search Live Web Index",
+  "description": "Privacy-focused live web and local news search using the independent Brave Search Index via official Brave Search MCP.",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Search for the latest CVE security advisories and breaking updates",
+    "Find recent benchmark comparisons between runtime releases",
+    "Search documentation and code snippets for new library features",
+    "Look up local business data and real-time news sources"
+  ]
+}

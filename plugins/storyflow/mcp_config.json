@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "storyflow": {
+      "type": "http",
+      "url": "https://mcp.storyflow.so/mcp"
+    }
+  }
+}

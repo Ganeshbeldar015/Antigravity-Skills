@@ -1,0 +1,13 @@
+{
+  "name": "storyflow",
+  "displayName": "Storyflow Visual Project Workspace",
+  "description": "Visual project management, infinite canvas ideation, Kanban boards, mind maps, and workflow automation via Storyflow MCP.",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Create a new visual roadmap and Kanban board for our project in Storyflow",
+    "Map user journeys and feature stories onto the Storyflow canvas",
+    "Sync sprint tasks and decision logs with our Storyflow workspace",
+    "Generate an interactive mind map from our system architecture spec"
+  ]
+}

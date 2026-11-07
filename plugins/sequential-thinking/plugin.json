@@ -1,0 +1,13 @@
+{
+  "name": "sequential-thinking",
+  "displayName": "Sequential Thinking & Dynamic Reasoning",
+  "description": "Multi-step chain-of-thought reasoning, hypothesis testing, branching, and adaptive problem-solving via the Sequential Thinking MCP server.",
+  "version": "1.0.0",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Plan a multi-step architectural refactor using sequential thinking",
+    "Debug a race condition by forming and testing multiple hypotheses",
+    "Perform a deep root-cause analysis on an intermittent production failure",
+    "Explore branching design alternatives for a distributed cache system"
+  ]
+}

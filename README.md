@@ -6,10 +6,10 @@
 
 <p>
   <a href="https://antigravity.google.com"><img src="https://img.shields.io/badge/Antigravity-2.0%2B%20Compatible-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity 2.0" /></a>
-  <a href="./plugins"><img src="https://img.shields.io/badge/Plugins-67%20Verified-34A853?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Plugins" /></a>
-  <a href="./plugins"><img src="https://img.shields.io/badge/Skills-94%20Active-FBBC05?style=for-the-badge&logo=codewars&logoColor=white" alt="Skills" /></a>
-  <a href="./plugins"><img src="https://img.shields.io/badge/Subagents-49%20Specialized-EA4335?style=for-the-badge&logo=robot-framework&logoColor=white" alt="Subagents" /></a>
-  <a href="./mcp_config.example.json"><img src="https://img.shields.io/badge/MCP%20Servers-26%20Integrated-9C27B0?style=for-the-badge&logo=graphql&logoColor=white" alt="MCP Servers" /></a>
+  <a href="./plugins"><img src="https://img.shields.io/badge/Plugins-71%20Verified-34A853?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Plugins" /></a>
+  <a href="./plugins"><img src="https://img.shields.io/badge/Skills-98%20Active-FBBC05?style=for-the-badge&logo=codewars&logoColor=white" alt="Skills" /></a>
+  <a href="./plugins"><img src="https://img.shields.io/badge/Subagents-53%20Specialized-EA4335?style=for-the-badge&logo=robot-framework&logoColor=white" alt="Subagents" /></a>
+  <a href="./mcp_config.example.json"><img src="https://img.shields.io/badge/MCP%20Servers-30%20Integrated-9C27B0?style=for-the-badge&logo=graphql&logoColor=white" alt="MCP Servers" /></a>
   <a href="./scripts/test_plugins.py"><img src="https://img.shields.io/badge/Validation-100%25%20Passed-00C853?style=for-the-badge" alt="Tests" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License" /></a>
 </p>
@@ -24,7 +24,7 @@
 
 ## ✨ Overview
 
-**`Antigravity-Skills`** is a curated, production-tested suite of **67 official-grade plugins** built to extend Google Antigravity.
+**`Antigravity-Skills`** is a curated, production-tested suite of **71 official-grade plugins** built to extend Google Antigravity.
 
 It elevates your AI pair-programming assistant into a specialized team of software architects, database engineers, security auditors, automated QA engineers, and design leads.
 
@@ -32,10 +32,10 @@ It elevates your AI pair-programming assistant into a specialized team of softwa
 
 | Capability | Details |
 | :--- | :--- |
-| **🧩 67 Verified Plugins** | Modular bundles encompassing skills, rules, subagents, and MCP configurations. |
-| **🎯 94 On-Demand Skills** | Progressive disclosure runbooks loaded strictly when triggered to conserve context window tokens. |
-| **🤖 49 Autonomous Subagents** | Role-specialized agents (`aidesigner-specialist`, `code-reviewer`, `database-architect`, `devops-engineer`, `performance-auditor`, `ui-component-engineer`, `web-designer`, `supabase-architect`, `storybook-specialist`, `cross-browser-tester`, `flutter-engineer`) running on Flash & Pro models. |
-| **🔌 26 MCP Tool Servers** | Direct integrations with AIDesigner, Storybook, Miro, Selenium, Flutter, Firecrawl, Figma, Supabase, Shadcn UI, Chrome DevTools, SQLite, PostgreSQL, Docker, Playwright, Firebase, Context7, Serena, GitHub, Linear, and Terraform. |
+| **🧩 71 Verified Plugins** | Modular bundles encompassing skills, rules, subagents, and MCP configurations. |
+| **🎯 98 On-Demand Skills** | Progressive disclosure runbooks loaded strictly when triggered to conserve context window tokens. |
+| **🤖 53 Autonomous Subagents** | Role-specialized agents (`deep-reasoner`, `sentry-investigator`, `web-researcher`, `storyflow-facilitator`, `aidesigner-specialist`, `code-reviewer`, `database-architect`, `devops-engineer`, `performance-auditor`, `ui-component-engineer`, `web-designer`, `supabase-architect`, `storybook-specialist`, `cross-browser-tester`, `flutter-engineer`) running on Flash & Pro models. |
+| **🔌 30 MCP Tool Servers** | Direct integrations with Storyflow, Sequential Thinking, Sentry, Brave Search, AIDesigner, Storybook, Miro, Selenium, Flutter, Firecrawl, Figma, Supabase, Shadcn UI, Chrome DevTools, SQLite, PostgreSQL, Docker, Playwright, Firebase, Context7, Serena, GitHub, Linear, and Terraform. |
 | **🚀 Universal Installer** | Included CLI installer (`scripts/install.py`) supporting both global (`~/.gemini/config/plugins/`) and project-scoped (`.agents/plugins/`) setups. |
 | **✅ 100% Automated Testing** | Automated schema, YAML frontmatter, path resolution, and syntax validation suite passing at 100%. |
 
@@ -45,14 +45,14 @@ It elevates your AI pair-programming assistant into a specialized team of softwa
 
 ### 1. Global Installation (Recommended)
 
-Install all 67 plugins globally across your machine so they are immediately active in **every** project:
+Install all 71 plugins globally across your machine so they are immediately active in **every** project:
 
 ```bash
 # Clone the repository
 git clone https://github.com/Ganeshbeldar015/Antigravity-Skills.git
 cd Antigravity-Skills
 
-# Install and register all 67 plugins globally
+# Install and register all 71 plugins globally
 python scripts/install.py --all --scope global
 ```
 
@@ -185,12 +185,14 @@ cp mcp_config.example.json ~/.gemini/config/mcp_config.json
 </details>
 
 <details open>
-<summary><h3>🌐 MCP Servers, Browser DevTools & Cloud (23 Plugins)</h3></summary>
+<summary><h3>🌐 MCP Servers, Browser DevTools & Cloud (25 Plugins)</h3></summary>
 
-> *Model Context Protocol (MCP) bridges connecting Antigravity directly to Chrome DevTools, Playwright headless browser automation, cloud databases, issue trackers, and external developer platforms.*
+> *Model Context Protocol (MCP) bridges connecting Antigravity directly to Chrome DevTools, Playwright headless browser automation, cloud databases, issue trackers, error monitors, and external developer platforms.*
 
 | Plugin | Version | Contained Skills | Subagents | MCP | Description |
 | :--- | :---: | :--- | :--- | :---: | :--- |
+| **[`sentry`](./plugins/sentry)** | `1.0.0` | • <code>sentry-debugger</code> | • <code>sentry-investigator</code> | ⚡ <b>Yes</b> | Official Sentry MCP server: inspect unresolved exceptions, stack traces, breadcrumb trails, and release regressions. |
+| **[`brave-search`](./plugins/brave-search)** | `1.0.0` | • <code>brave-search</code> | • <code>web-researcher</code> | ⚡ <b>Yes</b> | Official Brave Search MCP: private, real-time web and local news searches against the independent Brave Index. |
 | **[`selenium`](./plugins/selenium)** | `1.0.0` | • <code>selenium-automation</code> | • <code>cross-browser-tester</code> | ⚡ <b>Yes</b> | Selenium WebDriver cross-browser testing, element navigation, and automated accessibility checks. |
 | **[`flutter`](./plugins/flutter)** | `1.0.0` | • <code>flutter-dev</code> | • <code>flutter-engineer</code> | ⚡ <b>Yes</b> | Flutter app development MCP server: execute Flutter commands, run apps, and capture frame screenshots. |
 | **[`firecrawl`](./plugins/firecrawl)** | `1.0.0` | • <code>firecrawl-scraper</code> | • <code>web-crawler</code> | ⚡ <b>Yes</b> | Official Firecrawl web scraper, crawler, and clean markdown extractor MCP server for AI agents. |
@@ -218,12 +220,14 @@ cp mcp_config.example.json ~/.gemini/config/mcp_config.json
 </details>
 
 <details open>
-<summary><h3>🎨 Design, Mathematics & Reasoning (14 Plugins)</h3></summary>
+<summary><h3>🎨 Design, Mathematics & Reasoning (16 Plugins)</h3></summary>
 
-> *Tailored frontend UI/UX design engines, generative artifact generation, live interactive HTML playgrounds, mathematical Olympiad problem-solvers, and transparent telemetry reporters.*
+> *Tailored frontend UI/UX design engines, visual workspaces, generative artifact generation, live interactive HTML playgrounds, sequential reasoning, and transparent telemetry reporters.*
 
 | Plugin | Version | Contained Skills | Subagents | MCP | Description |
 | :--- | :---: | :--- | :--- | :---: | :--- |
+| **[`storyflow`](./plugins/storyflow)** | `1.0.0` | • <code>storyflow-workspace</code> | • <code>storyflow-facilitator</code> | ⚡ <b>Yes</b> | Visual project management, infinite canvas ideation, Kanban boards, mind maps, and workflow automation via Storyflow MCP. |
+| **[`sequential-thinking`](./plugins/sequential-thinking)** | `1.0.0` | • <code>sequential-thinking</code> | • <code>deep-reasoner</code> | ⚡ <b>Yes</b> | Multi-step chain-of-thought reasoning, hypothesis testing, branching, and adaptive problem-solving via Sequential Thinking MCP. |
 | **[`aidesigner`](./plugins/aidesigner)** | `1.0.0` | • <code>aidesigner-frontend</code> | • <code>aidesigner-specialist</code> | ⚡ <b>Yes</b> | Establish visual direction, generate high-fidelity UI artifacts, and adopt designs into native frontend stacks via AIDesigner MCP. |
 | **[`storybook`](./plugins/storybook)** | `1.0.0` | • <code>storybook-guide</code> | • <code>storybook-specialist</code> | ⚡ <b>Yes</b> | Storybook MCP server by Danny Williams: component discovery, story inspection, and design system reuse. |
 | **[`miro`](./plugins/miro)** | `1.0.0` | • <code>miro-whiteboard</code> | • <code>whiteboard-facilitator</code> | ⚡ <b>Yes</b> | Miro whiteboard collaboration MCP: sticky notes, visual shapes, frames, and collaborative brainstorming. |
@@ -252,9 +256,9 @@ flowchart TD
     U["User Request / Task"]
     CLI["Google Antigravity CLI / IDE"]
     PD{"Progressive Disclosure Evaluator"}
-    SK["On-Demand Skills (94 Active Runbooks)"]
-    AG["Autonomous Subagents (49 Specialized)"]
-    MCP["MCP Servers (AIDesigner, Storybook, Miro, Selenium, Flutter, Figma, Firecrawl, Playwright)"]
+    SK["On-Demand Skills (98 Active Runbooks)"]
+    AG["Autonomous Subagents (53 Specialized)"]
+    MCP["MCP Servers (Storyflow, Sentry, Brave Search, Sequential Thinking, AIDesigner, Storybook, Miro, Selenium, Flutter, Figma, Firecrawl, Playwright)"]
     RES["Clean Output / Verified Code Changes"]
 
     U --> CLI
@@ -298,8 +302,8 @@ python scripts/test_plugins.py
 
 - [x] **Schema Validation**: Validates all `plugin.json` and `marketplace.json` manifests against Antigravity specifications.
 - [x] **YAML Frontmatter Integrity**: Confirms every `SKILL.md` defines required `name` and `description` triggers.
-- [x] **Agent Definitions**: Checks all 49 subagent `.md` files for supported model parameters (`inherit`, `flash`, `pro`).
-- [x] **MCP Transports**: Validates JSON syntax and command/args structures across all 26 `mcp_config.json` files.
+- [x] **Agent Definitions**: Checks all 53 subagent `.md` files for supported model parameters (`inherit`, `flash`, `pro`).
+- [x] **MCP Transports**: Validates JSON syntax and command/args structures across all 30 `mcp_config.json` files.
 - [x] **100% Passed**: Zero warnings, zero dropped plugins.
 
 ---
