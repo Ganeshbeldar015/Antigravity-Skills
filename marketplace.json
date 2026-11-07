@@ -7,7 +7,7 @@
     "name": "Community",
     "url": "https://github.com/Community/Antigravity-Skills"
   },
-  "totalPlugins": 66,
+  "totalPlugins": 67,
   "plugins": [
     {
       "name": "agent-sdk-dev",
@@ -30,6 +30,31 @@
           "agent-sdk-verifier-ts"
         ],
         "hasMcp": false,
+        "hasHooks": false,
+        "hasRules": true
+      }
+    },
+    {
+      "name": "aidesigner",
+      "displayName": "AIDesigner Frontend",
+      "description": "Establish clear visual directions, generate or refine high-fidelity UI artifacts, and adopt designs into repository-native frontend stacks via AIDesigner MCP.",
+      "version": "1.0.0",
+      "source": "./plugins/aidesigner",
+      "logo": "plugins/aidesigner/assets/logo.svg",
+      "suggestedPrompts": [
+        "Generate a new modern landing page design with AIDesigner",
+        "Clone and adapt an existing UI design faithfully into React and Tailwind",
+        "Refine the visual direction and mobile responsiveness of our dashboard",
+        "Run visual QA inspection and stack adoption analysis on design artifacts"
+      ],
+      "capabilities": {
+        "skills": [
+          "aidesigner-frontend"
+        ],
+        "agents": [
+          "aidesigner-specialist"
+        ],
+        "hasMcp": true,
         "hasHooks": false,
         "hasRules": true
       }

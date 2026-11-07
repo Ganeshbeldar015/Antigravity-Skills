@@ -191,6 +191,10 @@
         "mcp-server-flutter"
       ],
       "env": {}
+    },
+    "aidesigner": {
+      "type": "http",
+      "url": "https://api.aidesigner.ai/api/v1/mcp"
     }
   }
 }
