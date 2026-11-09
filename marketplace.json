@@ -7,7 +7,7 @@
     "name": "Community",
     "url": "https://github.com/Community/Antigravity-Skills"
   },
-  "totalPlugins": 71,
+  "totalPlugins": 50,
   "plugins": [
     {
       "name": "agent-sdk-dev",
@@ -242,28 +242,6 @@
       }
     },
     {
-      "name": "clangd-lsp",
-      "displayName": "C/C++ Language Server (Clangd)",
-      "description": "C/C++ language server (clangd) integration for Google Antigravity, providing AST diagnostics, code intelligence, and formatting.",
-      "version": "1.0.0",
-      "source": "./plugins/clangd-lsp",
-      "logo": "plugins/clangd-lsp/assets/logo.svg",
-      "suggestedPrompts": [
-        "Check C/C++ Language Server (Clangd) status and server diagnostics",
-        "Find references and definitions in .c files",
-        "Run type checking and code analysis with clangd"
-      ],
-      "capabilities": {
-        "skills": [
-          "clangd-lsp"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
       "name": "code-modernization",
       "displayName": "Code Modernization",
       "description": "Guided modernization for any legacy codebase: start with /modernize, get an assessment, an interactive map, the business rules mined from the code, and a plan you approve, then an upgrade, a rewrite or a rebuild with independent proof that the new code behaves like the old. Includes security hardening, a one-page report, specialist agents, and an optional live progress pane (early access).",
@@ -395,52 +373,6 @@
       }
     },
     {
-      "name": "csharp-lsp",
-      "displayName": "C# Language Server",
-      "description": "C# language server integration for Google Antigravity, providing semantic analysis, completions, and Roslyn diagnostics.",
-      "version": "1.0.0",
-      "source": "./plugins/csharp-lsp",
-      "logo": "plugins/csharp-lsp/assets/logo.svg",
-      "suggestedPrompts": [
-        "Check C# Language Server status and server diagnostics",
-        "Find references and definitions in .cs files",
-        "Run type checking and code analysis with csharp-ls"
-      ],
-      "capabilities": {
-        "skills": [
-          "csharp-lsp"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "cwc-makers",
-      "displayName": "Cwc Makers",
-      "description": "Seamless onboarding for the Code-with-Antigravity Makers Cardputer: one /maker-setup command clones the build-with-claude repo, flashes UIFlow firmware, and installs the Antigravity Buddy app bundle onto a freshly-plugged-in M5Stack Cardputer-Adv.",
-      "version": "1.0.0",
-      "source": "./plugins/cwc-makers",
-      "logo": "plugins/cwc-makers/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Cwc Makers capabilities",
-        "Execute Cwc Makers standard workflow",
-        "Review configuration and settings for Cwc Makers"
-      ],
-      "capabilities": {
-        "skills": [
-          "cardputer-buddy",
-          "m5-onboard",
-          "maker-setup"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
       "name": "database-tools",
       "displayName": "Database Tools",
       "description": "Production database engineering toolkit: schema design, SQL query optimization, migration automation, and SQLite/PostgreSQL MCP inspection.",
@@ -460,29 +392,6 @@
         "agents": [
           "database-architect"
         ],
-        "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "discord",
-      "displayName": "Discord",
-      "description": "Discord channel for Google Antigravity — messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /discord:access.",
-      "version": "0.0.4",
-      "source": "./plugins/discord",
-      "logo": "plugins/discord/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Discord capabilities",
-        "Execute Discord standard workflow",
-        "Review configuration and settings for Discord"
-      ],
-      "capabilities": {
-        "skills": [
-          "access",
-          "configure"
-        ],
-        "agents": [],
         "hasMcp": true,
         "hasHooks": false,
         "hasRules": true
@@ -514,29 +423,6 @@
       }
     },
     {
-      "name": "example-plugin",
-      "displayName": "Example Plugin",
-      "description": "A comprehensive example plugin demonstrating all Google Antigravity extension options including commands, agents, skills, hooks, and MCP servers",
-      "version": "1.0.0",
-      "source": "./plugins/example-plugin",
-      "logo": "plugins/example-plugin/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Example Plugin capabilities",
-        "Execute Example Plugin standard workflow",
-        "Review configuration and settings for Example Plugin"
-      ],
-      "capabilities": {
-        "skills": [
-          "example-command",
-          "example-skill"
-        ],
-        "agents": [],
-        "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
       "name": "explanatory-output-style",
       "displayName": "Explanatory Output Style",
       "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)",
@@ -553,26 +439,6 @@
         "agents": [],
         "hasMcp": false,
         "hasHooks": true,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "fakechat",
-      "displayName": "Fakechat",
-      "description": "Localhost iMessage-style web chat for Google Antigravity — test surface with file upload and edits. No tokens, no access control.",
-      "version": "0.0.1",
-      "source": "./plugins/fakechat",
-      "logo": "plugins/fakechat/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Fakechat capabilities",
-        "Execute Fakechat standard workflow",
-        "Review configuration and settings for Fakechat"
-      ],
-      "capabilities": {
-        "skills": [],
-        "agents": [],
-        "hasMcp": true,
-        "hasHooks": false,
         "hasRules": true
       }
     },
@@ -760,28 +626,6 @@
       }
     },
     {
-      "name": "gopls-lsp",
-      "displayName": "Go Language Server (gopls)",
-      "description": "Go language server (gopls) integration for Google Antigravity, providing analysis, package navigation, and refactoring.",
-      "version": "1.0.0",
-      "source": "./plugins/gopls-lsp",
-      "logo": "plugins/gopls-lsp/assets/logo.svg",
-      "suggestedPrompts": [
-        "Check Go Language Server (gopls) status and server diagnostics",
-        "Find references and definitions in .go files",
-        "Run type checking and code analysis with gopls"
-      ],
-      "capabilities": {
-        "skills": [
-          "gopls-lsp"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
       "name": "hookify",
       "displayName": "Hookify",
       "description": "Easily create hooks to prevent unwanted behaviors by analyzing conversation patterns",
@@ -806,73 +650,6 @@
         ],
         "hasMcp": false,
         "hasHooks": true,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "imessage",
-      "displayName": "Imessage",
-      "description": "iMessage channel for Google Antigravity — reads chat.db directly, sends via AppleScript. Built-in access control; manage pairing, allowlists, and policy via /imessage:access.",
-      "version": "0.2.0",
-      "source": "./plugins/imessage",
-      "logo": "plugins/imessage/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Imessage capabilities",
-        "Execute Imessage standard workflow",
-        "Review configuration and settings for Imessage"
-      ],
-      "capabilities": {
-        "skills": [
-          "access",
-          "configure"
-        ],
-        "agents": [],
-        "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "jdtls-lsp",
-      "displayName": "Java Language Server (Eclipse JDT.LS)",
-      "description": "Eclipse JDT.LS language server for Java projects in Google Antigravity.",
-      "version": "1.0.0",
-      "source": "./plugins/jdtls-lsp",
-      "logo": "plugins/jdtls-lsp/assets/logo.svg",
-      "suggestedPrompts": [
-        "Check Java Language Server (Eclipse JDT.LS) status and server diagnostics",
-        "Find references and definitions in .java files",
-        "Run type checking and code analysis with jdtls"
-      ],
-      "capabilities": {
-        "skills": [
-          "jdtls-lsp"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "kotlin-lsp",
-      "displayName": "Kotlin Language Server",
-      "description": "Kotlin language server for Kotlin and Android projects in Google Antigravity.",
-      "version": "1.0.0",
-      "source": "./plugins/kotlin-lsp",
-      "logo": "plugins/kotlin-lsp/assets/logo.svg",
-      "suggestedPrompts": [
-        "Check Kotlin Language Server status and server diagnostics",
-        "Find references and definitions in .kt files",
-        "Run type checking and code analysis with kotlin-lsp"
-      ],
-      "capabilities": {
-        "skills": [
-          "kotlin-lsp"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
         "hasRules": true
       }
     },
@@ -932,77 +709,6 @@
         "skills": [],
         "agents": [],
         "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "lua-lsp",
-      "displayName": "Lua Language Server",
-      "description": "Lua language server for Lua scripting, Game dev, and Neovim development in Google Antigravity.",
-      "version": "1.0.0",
-      "source": "./plugins/lua-lsp",
-      "logo": "plugins/lua-lsp/assets/logo.svg",
-      "suggestedPrompts": [
-        "Check Lua Language Server status and server diagnostics",
-        "Find references and definitions in .lua files",
-        "Run type checking and code analysis with lua-language-server"
-      ],
-      "capabilities": {
-        "skills": [
-          "lua-lsp"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "math-olympiad",
-      "displayName": "Math Olympiad",
-      "description": "Solve competition math (IMO, Putnam, USAMO) with adversarial verification that catches what self-verification misses. Fresh-context verifiers attack proofs with specific failure patterns. Calibrated abstention over bluffing.",
-      "version": "1.0.0",
-      "source": "./plugins/math-olympiad",
-      "logo": "plugins/math-olympiad/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Math Olympiad capabilities",
-        "Execute Math Olympiad standard workflow",
-        "Review configuration and settings for Math Olympiad"
-      ],
-      "capabilities": {
-        "skills": [
-          "math-olympiad"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "math-proof",
-      "displayName": "Math Proof",
-      "description": "Two skills for hard mathematics problems, each ending in a self-contained proof.md: /math-proof:solo has the session work the problem itself in stages with a notes file; /math-proof:siege works on it for hours in rounds of judge and worker sub-agents and says plainly what is and is not proved.",
-      "version": "1.0.0",
-      "source": "./plugins/math-proof",
-      "logo": "plugins/math-proof/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Math Proof capabilities",
-        "Execute Math Proof standard workflow",
-        "Review configuration and settings for Math Proof"
-      ],
-      "capabilities": {
-        "skills": [
-          "siege",
-          "solo"
-        ],
-        "agents": [
-          "math-proof-judge",
-          "math-proof-worker-deep",
-          "math-proof-worker"
-        ],
-        "hasMcp": false,
         "hasHooks": false,
         "hasRules": true
       }
@@ -1074,28 +780,6 @@
           "whiteboard-facilitator"
         ],
         "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "php-lsp",
-      "displayName": "PHP Language Server (Intelephense)",
-      "description": "PHP language server integration for PHP and Laravel projects in Google Antigravity.",
-      "version": "1.0.0",
-      "source": "./plugins/php-lsp",
-      "logo": "plugins/php-lsp/assets/logo.svg",
-      "suggestedPrompts": [
-        "Check PHP Language Server (Intelephense) status and server diagnostics",
-        "Find references and definitions in .php files",
-        "Run type checking and code analysis with intelephense"
-      ],
-      "capabilities": {
-        "skills": [
-          "php-lsp"
-        ],
-        "agents": [],
-        "hasMcp": false,
         "hasHooks": false,
         "hasRules": true
       }
@@ -1208,96 +892,6 @@
       "capabilities": {
         "skills": [
           "pyright-lsp"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "ralph-loop",
-      "displayName": "Ralph Loop",
-      "description": "Continuous self-referential AI loops for interactive iterative development, implementing the Ralph Wiggum technique. Run Antigravity in a while-true loop with the same prompt until task completion.",
-      "version": "1.0.0",
-      "source": "./plugins/ralph-loop",
-      "logo": "plugins/ralph-loop/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Ralph Loop capabilities",
-        "Execute Ralph Loop standard workflow",
-        "Review configuration and settings for Ralph Loop"
-      ],
-      "capabilities": {
-        "skills": [
-          "cancel-ralph",
-          "help",
-          "ralph-loop"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": true,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "receipts",
-      "displayName": "Receipts",
-      "description": "Receipts integration and capabilities for Google Antigravity.",
-      "version": "1.0.0",
-      "source": "./plugins/receipts",
-      "logo": "plugins/receipts/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Receipts capabilities",
-        "Execute Receipts standard workflow",
-        "Review configuration and settings for Receipts"
-      ],
-      "capabilities": {
-        "skills": [
-          "receipts"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "ruby-lsp",
-      "displayName": "Ruby Language Server",
-      "description": "Ruby LSP language server for Ruby and Rails projects in Google Antigravity.",
-      "version": "1.0.0",
-      "source": "./plugins/ruby-lsp",
-      "logo": "plugins/ruby-lsp/assets/logo.svg",
-      "suggestedPrompts": [
-        "Check Ruby Language Server status and server diagnostics",
-        "Find references and definitions in .rb files",
-        "Run type checking and code analysis with ruby-lsp"
-      ],
-      "capabilities": {
-        "skills": [
-          "ruby-lsp"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "rust-analyzer-lsp",
-      "displayName": "Rust Language Server (rust-analyzer)",
-      "description": "rust-analyzer language server for Rust projects in Google Antigravity.",
-      "version": "1.0.0",
-      "source": "./plugins/rust-analyzer-lsp",
-      "logo": "plugins/rust-analyzer-lsp/assets/logo.svg",
-      "suggestedPrompts": [
-        "Check Rust Language Server (rust-analyzer) status and server diagnostics",
-        "Find references and definitions in .rs files",
-        "Run type checking and code analysis with rust-analyzer"
-      ],
-      "capabilities": {
-        "skills": [
-          "rust-analyzer-lsp"
         ],
         "agents": [],
         "hasMcp": false,
@@ -1421,28 +1015,6 @@
       }
     },
     {
-      "name": "session-report",
-      "displayName": "Session Report",
-      "description": "Session Report integration and capabilities for Google Antigravity.",
-      "version": "1.0.0",
-      "source": "./plugins/session-report",
-      "logo": "plugins/session-report/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Session Report capabilities",
-        "Execute Session Report standard workflow",
-        "Review configuration and settings for Session Report"
-      ],
-      "capabilities": {
-        "skills": [
-          "session-report"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
       "name": "shadcn",
       "displayName": "Shadcn & React Bits",
       "description": "Scaffold and integrate modern React UI components, blocks, and design systems directly from Shadcn UI, React Bits Starter, and React Bits Pro registries via MCP.",
@@ -1559,51 +1131,6 @@
         "agents": [
           "supabase-architect"
         ],
-        "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "swift-lsp",
-      "displayName": "Swift Language Server (SourceKit-LSP)",
-      "description": "SourceKit-LSP language server for Swift and Apple platform development in Google Antigravity.",
-      "version": "1.0.0",
-      "source": "./plugins/swift-lsp",
-      "logo": "plugins/swift-lsp/assets/logo.svg",
-      "suggestedPrompts": [
-        "Check Swift Language Server (SourceKit-LSP) status and server diagnostics",
-        "Find references and definitions in .swift files",
-        "Run type checking and code analysis with sourcekit-lsp"
-      ],
-      "capabilities": {
-        "skills": [
-          "swift-lsp"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "telegram",
-      "displayName": "Telegram",
-      "description": "Telegram channel for Google Antigravity — messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /telegram:access.",
-      "version": "0.0.7",
-      "source": "./plugins/telegram",
-      "logo": "plugins/telegram/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Telegram capabilities",
-        "Execute Telegram standard workflow",
-        "Review configuration and settings for Telegram"
-      ],
-      "capabilities": {
-        "skills": [
-          "access",
-          "configure"
-        ],
-        "agents": [],
         "hasMcp": true,
         "hasHooks": false,
         "hasRules": true
