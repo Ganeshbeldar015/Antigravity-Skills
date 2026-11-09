@@ -117,6 +117,20 @@ Connect these 28 leading Model Context Protocol tools directly to your Antigravi
 | **`flutter`** | Flutter App Development | `Stdio` | Run mobile/web Flutter apps, execute integration tests, and capture frame screenshots. |
 | **`laravel-boost`** | Laravel Boost | `Stdio` | Laravel artisan assistant, route analysis, schema inspection, and queue debugging. |
 
+### 🔑 Environment Variables Reference
+
+While many servers (like `sequential-thinking`, `playwright`, `sqlite`, `chrome-devtools`) work out of the box with zero credentials, cloud-connected MCP servers read optional environment variables:
+
+| Environment Variable | Target MCP Server | How to Obtain / Tier |
+| :--- | :--- | :--- |
+| `BRAVE_API_KEY` | `brave-search` | Free tier available at [brave.com/search/api](https://brave.com/search/api/) |
+| `SENTRY_AUTH_TOKEN` | `sentry` | Personal User Auth Token at [sentry.io/settings/account/api/auth-tokens/](https://sentry.io/settings/account/api/auth-tokens/) |
+| `FIRECRAWL_API_KEY` | `firecrawl` | Free starter tier at [firecrawl.dev](https://firecrawl.dev) (keyless mode also supported) |
+| `FIGMA_ACCESS_TOKEN` | `figma` | Personal Access Token from Figma Account Settings |
+| `SUPABASE_ACCESS_TOKEN` | `supabase` | Management API Token from [supabase.com/dashboard/account/tokens](https://supabase.com/dashboard/account/tokens) |
+| `MIRO_OAUTH_TOKEN` | `miro` | Developer OAuth Token from Miro Developer Portal |
+| `AIDESIGNER_MCP_ACCESS_TOKEN` | `aidesigner` | Account access token or OAuth browser login at [aidesigner.ai](https://aidesigner.ai) |
+
 ### Enable Unified MCP Globally
 
 ```powershell
@@ -126,6 +140,42 @@ Copy-Item mcp_config.example.json "$HOME\.gemini\config\mcp_config.json"
 # On macOS / Linux:
 cp mcp_config.example.json ~/.gemini/config/mcp_config.json
 ```
+
+---
+
+## 🚀 Popular Agent Workflows
+
+Antigravity automatically selects the right skill, subagent, and MCP tool based on your natural language prompt:
+
+### 1. 🌐 Real-Time Web Research & Live Documentation
+```text
+"Search for the latest security vulnerabilities in Next.js 15 and extract key mitigations."
+```
+* **Engine**: Activates `brave-search` or `firecrawl` via the `web-researcher` subagent to query live web indexes beyond LLM knowledge cutoffs.
+
+### 2. 🎨 AI Visual Design to Production Code
+```text
+"Generate a sleek dashboard hero section and convert it into accessible React & Tailwind components."
+```
+* **Engine**: Invokes `aidesigner` and `web-design` to establish aesthetic direction, then uses `shadcn` to scaffold verified accessible primitives.
+
+### 3. 🧠 Deep Architectural Refactoring & Concurrency Debugging
+```text
+"Debug an intermittent race condition in our distributed cache using sequential thinking."
+```
+* **Engine**: Launches the `deep-reasoner` subagent with `sequential-thinking`, evaluating competing hypotheses step-by-step with dynamic branching.
+
+### 4. 🛡️ Multi-Agent Pull Request Review
+```text
+"Review this pull request and check for silent failures, test coverage gaps, and type design quality."
+```
+* **Engine**: Dispatches `pr-review-toolkit` (`silent-failure-hunter`, `pr-test-analyzer`, `type-design-analyzer`, and `code-reviewer`) with confidence scoring.
+
+### 5. 🚨 Production Crash Triage
+```text
+"Inspect unresolved production errors in Sentry, identify release regressions, and write a regression test."
+```
+* **Engine**: Activates `sentry-debugger` via the `sentry-investigator` subagent to trace breadcrumbs, inspect source-mapped stack traces, and author safe patches.
 
 ---
 
@@ -256,6 +306,14 @@ flowchart TD
     MCP --> RES
     RES --> CLI
 ```
+
+### ⚡ Zero-Bloat Performance Engineering
+
+This suite is engineered for minimal latency and maximum token efficiency:
+
+* **0% Idle CPU & RAM (Lazy-Loaded MCPs)**: Tool servers like Playwright, Selenium, and Docker remain unspawned on disk until a prompt explicitly requires them.
+* **Progressive Disclosure**: Full skill runbooks (`SKILL.md`) are never dumped into context up front. Only lightweight routing metadata is indexed, loading full instructions strictly on demand.
+* **Optimized System Prompt**: Purged of hardware-locked devices, platform-incompatible bridges, and dummy templates—saving ~1,800 tokens per prompt turn for faster generation and laser-focused attention.
 
 ### Folder Hierarchy Specification
 
