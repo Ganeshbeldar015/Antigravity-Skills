@@ -7,7 +7,7 @@
 <p>
   <a href="https://antigravity.google.com"><img src="https://img.shields.io/badge/Antigravity-2.0%2B%20Compatible-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity 2.0" /></a>
   <a href="./plugins"><img src="https://img.shields.io/badge/Plugins-37%20Streamlined-34A853?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Plugins" /></a>
-  <a href="./plugins"><img src="https://img.shields.io/badge/Skills-35%20Active-FBBC05?style=for-the-badge&logo=codewars&logoColor=white" alt="Skills" /></a>
+  <a href="./skills"><img src="https://img.shields.io/badge/Skills-494%20Library-FBBC05?style=for-the-badge&logo=codewars&logoColor=white" alt="Skills Library" /></a>
   <a href="./plugins"><img src="https://img.shields.io/badge/Subagents-34%20Specialized-EA4335?style=for-the-badge&logo=robot-framework&logoColor=white" alt="Subagents" /></a>
   <a href="./mcp_config.example.json"><img src="https://img.shields.io/badge/MCP%20Servers-23%20Integrated-9C27B0?style=for-the-badge&logo=graphql&logoColor=white" alt="MCP Servers" /></a>
   <a href="./scripts/test_plugins.py"><img src="https://img.shields.io/badge/Validation-100%25%20Passed-00C853?style=for-the-badge" alt="Tests" /></a>
@@ -16,7 +16,7 @@
 
 <br/>
 
-[**✨ Overview**](#-overview) • [**⚡ Quick Installation**](#-quick-installation) • [**🧩 Plugins Directory**](#-complete-plugins--skills-directory) • [**🔌 MCP Servers Suite**](#-mcp-servers-suite) • [**📐 Architecture**](#-antigravity-architecture) • [**🧪 Validation**](#-automated-validation)
+[**✨ Overview**](#-overview) • [**⚡ Quick Installation**](#-quick-installation) • [**🧩 Plugins Directory**](#-complete-plugins--skills-directory) • [**🎯 Skills Library**](./skills) • [**🔌 MCP Servers Suite**](#-mcp-servers-suite) • [**📐 Architecture**](#-antigravity-architecture) • [**🧪 Validation**](#-automated-validation)
 
 </div>
 
@@ -33,7 +33,7 @@ Streamlined for modern software engineering, web development, and cloud architec
 | Capability | Details |
 | :--- | :--- |
 | **🧩 37 Streamlined Plugins** | High-utility modular bundles encompassing skills, rules, subagents, and MCP configurations with zero bloat. |
-| **🎯 35 On-Demand Skills** | Progressive disclosure runbooks loaded strictly when triggered to conserve context window tokens. |
+| **🎯 494 Modular Skills** | Curated [Skills Directory](./skills) with on-demand procedural runbooks organized across 11 software engineering domains. |
 | **🤖 34 Autonomous Subagents** | Role-specialized agents (`deep-reasoner`, `web-researcher`, `storyflow-facilitator`, `aidesigner-specialist`, `code-reviewer`, `database-architect`, `devops-engineer`, `performance-auditor`, `ui-component-engineer`, `web-designer`, `supabase-architect`, `storybook-specialist`, `cross-browser-tester`) running on Flash & Pro models. |
 | **🔌 23 MCP Tool Servers** | Turnkey integrations with Storyflow, Sequential Thinking, Brave Search, AIDesigner, Storybook, Miro, Selenium, Firecrawl, Figma, Supabase, Shadcn UI, Chrome DevTools, SQLite, PostgreSQL, Docker, Playwright, Firebase, Context7, Serena, GitHub, 21st, Canva, and Google Stitch. |
 | **🚀 Universal Installer** | Included CLI installer (`scripts/install.py`) supporting both global (`~/.gemini/config/plugins/`) and project-scoped (`.agents/plugins/`) setups. |
