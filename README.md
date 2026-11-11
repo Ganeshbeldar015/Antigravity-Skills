@@ -6,10 +6,10 @@
 
 <p>
   <a href="https://antigravity.google.com"><img src="https://img.shields.io/badge/Antigravity-2.0%2B%20Compatible-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity 2.0" /></a>
-  <a href="./plugins"><img src="https://img.shields.io/badge/Plugins-50%20Streamlined-34A853?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Plugins" /></a>
-  <a href="./plugins"><img src="https://img.shields.io/badge/Skills-69%20Active-FBBC05?style=for-the-badge&logo=codewars&logoColor=white" alt="Skills" /></a>
-  <a href="./plugins"><img src="https://img.shields.io/badge/Subagents-50%20Specialized-EA4335?style=for-the-badge&logo=robot-framework&logoColor=white" alt="Subagents" /></a>
-  <a href="./mcp_config.example.json"><img src="https://img.shields.io/badge/MCP%20Servers-28%20Integrated-9C27B0?style=for-the-badge&logo=graphql&logoColor=white" alt="MCP Servers" /></a>
+  <a href="./plugins"><img src="https://img.shields.io/badge/Plugins-37%20Streamlined-34A853?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Plugins" /></a>
+  <a href="./plugins"><img src="https://img.shields.io/badge/Skills-35%20Active-FBBC05?style=for-the-badge&logo=codewars&logoColor=white" alt="Skills" /></a>
+  <a href="./plugins"><img src="https://img.shields.io/badge/Subagents-34%20Specialized-EA4335?style=for-the-badge&logo=robot-framework&logoColor=white" alt="Subagents" /></a>
+  <a href="./mcp_config.example.json"><img src="https://img.shields.io/badge/MCP%20Servers-23%20Integrated-9C27B0?style=for-the-badge&logo=graphql&logoColor=white" alt="MCP Servers" /></a>
   <a href="./scripts/test_plugins.py"><img src="https://img.shields.io/badge/Validation-100%25%20Passed-00C853?style=for-the-badge" alt="Tests" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License" /></a>
 </p>
@@ -24,7 +24,7 @@
 
 ## ✨ Overview
 
-**`Antigravity-Skills`** is a curated, production-tested suite of **50 high-performance plugins** built to extend Google Antigravity.
+**`Antigravity-Skills`** is a curated, production-tested suite of **37 high-performance plugins** built to extend Google Antigravity.
 
 Streamlined for modern software engineering, web development, and cloud architecture, it eliminates bloat, hardware-locked dependencies, and dummy templates while giving your AI pair-programming assistant an elite team of architects, database engineers, security auditors, automated QA testers, and UI/UX design leads.
 
@@ -32,10 +32,10 @@ Streamlined for modern software engineering, web development, and cloud architec
 
 | Capability | Details |
 | :--- | :--- |
-| **🧩 50 Streamlined Plugins** | High-utility modular bundles encompassing skills, rules, subagents, and MCP configurations with zero bloat. |
-| **🎯 69 On-Demand Skills** | Progressive disclosure runbooks loaded strictly when triggered to conserve context window tokens. |
-| **🤖 50 Autonomous Subagents** | Role-specialized agents (`deep-reasoner`, `sentry-investigator`, `web-researcher`, `storyflow-facilitator`, `aidesigner-specialist`, `code-reviewer`, `database-architect`, `devops-engineer`, `performance-auditor`, `ui-component-engineer`, `web-designer`, `supabase-architect`, `storybook-specialist`, `cross-browser-tester`, `flutter-engineer`) running on Flash & Pro models. |
-| **🔌 28 MCP Tool Servers** | Turnkey integrations with Storyflow, Sequential Thinking, Sentry, Brave Search, AIDesigner, Storybook, Miro, Selenium, Flutter, Firecrawl, Figma, Supabase, Shadcn UI, Chrome DevTools, SQLite, PostgreSQL, Docker, Playwright, Firebase, Context7, Serena, GitHub, Linear, GitLab, and Terraform. |
+| **🧩 37 Streamlined Plugins** | High-utility modular bundles encompassing skills, rules, subagents, and MCP configurations with zero bloat. |
+| **🎯 35 On-Demand Skills** | Progressive disclosure runbooks loaded strictly when triggered to conserve context window tokens. |
+| **🤖 34 Autonomous Subagents** | Role-specialized agents (`deep-reasoner`, `web-researcher`, `storyflow-facilitator`, `aidesigner-specialist`, `code-reviewer`, `database-architect`, `devops-engineer`, `performance-auditor`, `ui-component-engineer`, `web-designer`, `supabase-architect`, `storybook-specialist`, `cross-browser-tester`) running on Flash & Pro models. |
+| **🔌 23 MCP Tool Servers** | Turnkey integrations with Storyflow, Sequential Thinking, Brave Search, AIDesigner, Storybook, Miro, Selenium, Firecrawl, Figma, Supabase, Shadcn UI, Chrome DevTools, SQLite, PostgreSQL, Docker, Playwright, Firebase, Context7, Serena, GitHub, 21st, Canva, and Google Stitch. |
 | **🚀 Universal Installer** | Included CLI installer (`scripts/install.py`) supporting both global (`~/.gemini/config/plugins/`) and project-scoped (`.agents/plugins/`) setups. |
 | **✅ 100% Automated Testing** | Automated schema, YAML frontmatter, path resolution, and syntax validation suite passing at 100%. |
 
@@ -45,14 +45,14 @@ Streamlined for modern software engineering, web development, and cloud architec
 
 ### 1. Global Installation (Recommended)
 
-Install all 50 streamlined plugins globally across your machine so they are immediately active in **every** project:
+Install all 37 streamlined plugins globally across your machine so they are immediately active in **every** project:
 
 ```bash
 # Clone the repository
 git clone https://github.com/Ganeshbeldar015/Antigravity-Skills.git
 cd Antigravity-Skills
 
-# Install and register all 50 plugins globally
+# Install and register all 37 plugins globally
 python scripts/install.py --all --scope global
 ```
 
@@ -68,13 +68,13 @@ python <path-to-Antigravity-Skills>/scripts/install.py database-tools --scope pr
 ### 3. Interactive CLI Commands
 
 ```bash
-# List all 50 plugins with versions and summaries
+# List all 37 plugins with versions and summaries
 python scripts/install.py --list
 
-# Inspect all 25 plugins providing MCP servers and their transport types
+# Inspect all 19 plugins providing MCP servers and their transport types
 python scripts/install.py --mcp
 
-# Run the full validation test suite (100% passing across 50 plugins)
+# Run the full validation test suite (100% passing across 37 plugins)
 python scripts/test_plugins.py
 ```
 
@@ -84,14 +84,13 @@ python scripts/test_plugins.py
 
 This repository includes a turnkey unified configuration file: [`mcp_config.example.json`](./mcp_config.example.json).
 
-Connect these 28 leading Model Context Protocol tools directly to your Antigravity environment:
+Connect these 23 leading Model Context Protocol tools directly to your Antigravity environment:
 
 | Tool Server | Provider | Transport | Key Capabilities |
 | :--- | :--- | :---: | :--- |
 | **`aidesigner`** | AIDesigner AI | `HTTP (OAuth)` | Generative UI artifacts, clone/enhance visual workflows, screenshot QA, and repository adoption. |
 | **`storyflow`** | Storyflow | `HTTP (OAuth)` | Infinite canvas workspace, visual agile Kanban boards, mind maps, and user story mapping. |
 | **`sequential-thinking`** | Model Context Protocol | `Stdio` | Multi-step chain-of-thought dynamic reasoning, hypothesis testing, branching, and backtracking. |
-| **`sentry`** | Sentry | `Stdio` | Production error monitoring, breadcrumb trails, source-mapped stack traces, and regression triage. |
 | **`brave-search`** | Brave Software | `Stdio` | Privacy-focused live web and local news searches against the independent Brave Index. |
 | **`chrome-devtools`** | Chrome DevTools MCP | `Stdio` | Real-time browser debugging, console logs, network error tracking, and Core Web Vitals analysis. |
 | **`sqlite`** | Model Context Protocol | `Stdio` | Direct SQL inspection, schema analysis, and query execution on SQLite databases. |
@@ -101,21 +100,17 @@ Connect these 28 leading Model Context Protocol tools directly to your Antigravi
 | **`context7`** | Upstash Context7 | `HTTP` | Live, real-time documentation retrieval for modern libraries and SDKs. |
 | **`firebase`** | Google Firebase | `Stdio` | Manage Firestore databases, Cloud Functions, and Firebase Auth rules. |
 | **`github`** | GitHub Copilot | `HTTP` | Automated issue creation, pull request generation, and repository querying. |
-| **`gitlab`** | GitLab DevOps | `HTTP` | Merge requests, repository management, CI/CD pipeline triggers, and issue tracking. |
-| **`linear`** | Linear App | `HTTP` | Issue management, sprint cycle planning, and project roadmap updates. |
 | **`serena`** | Serena Codebase | `Stdio` | Semantic symbol graphing, reference mapping, and codebase exploration. |
-| **`terraform`** | HashiCorp Terraform | `Stdio (Docker)` | Infrastructure-as-code linting, validation, and cloud state planning. |
 | **`shadcn`** | Shadcn UI | `Stdio` | Direct CLI scaffolding of modern Tailwind CSS & React UI components and blocks. |
 | **`firecrawl`** | Firecrawl | `Stdio` | LLM web scraping, recursive domain crawling, clean markdown extraction, and site mapping. |
 | **`figma`** | Figma | `HTTP` | Inspect Figma design files, auto-layouts, tokens, and convert design nodes to clean React/Tailwind code. |
 | **`supabase`** | Supabase | `Stdio` | Cloud Postgres management, schema migrations, Row-Level Security (RLS), and Edge Functions. |
 | **`canva`** | Canva | `HTTP / Bridge` | Fetch design templates, visual assets, brand kits, and graphics generation. |
 | **`21st`** | 21st.dev | `HTTP / Bridge` | Curated Tailwind/React UI blocks, themes, and design component inspiration. |
+| **`StitchMCP`** | Google Stitch | `HTTP / Bridge` | Generative design systems, prompt-to-screen UI generation, and visual variants. |
 | **`storybook`** | Storybook Design System | `Stdio` | Component discovery, props introspection, and design system reuse to prevent UI hallucination. |
 | **`miro`** | Miro Whiteboard | `Stdio` | Digital whiteboard collaboration, sticky notes, diagram shapes, and workshop canvases. |
 | **`selenium`** | Selenium WebDriver | `Stdio` | Automated cross-browser compatibility testing, DOM interaction, and accessibility checks. |
-| **`flutter`** | Flutter App Development | `Stdio` | Run mobile/web Flutter apps, execute integration tests, and capture frame screenshots. |
-| **`laravel-boost`** | Laravel Boost | `Stdio` | Laravel artisan assistant, route analysis, schema inspection, and queue debugging. |
 
 ### 🔑 Environment Variables Reference
 
@@ -124,7 +119,6 @@ While many servers (like `sequential-thinking`, `playwright`, `sqlite`, `chrome-
 | Environment Variable | Target MCP Server | How to Obtain / Tier |
 | :--- | :--- | :--- |
 | `BRAVE_API_KEY` | `brave-search` | Free tier available at [brave.com/search/api](https://brave.com/search/api/) |
-| `SENTRY_AUTH_TOKEN` | `sentry` | Personal User Auth Token at [sentry.io/settings/account/api/auth-tokens/](https://sentry.io/settings/account/api/auth-tokens/) |
 | `FIRECRAWL_API_KEY` | `firecrawl` | Free starter tier at [firecrawl.dev](https://firecrawl.dev) (keyless mode also supported) |
 | `FIGMA_ACCESS_TOKEN` | `figma` | Personal Access Token from Figma Account Settings |
 | `SUPABASE_ACCESS_TOKEN` | `supabase` | Management API Token from [supabase.com/dashboard/account/tokens](https://supabase.com/dashboard/account/tokens) |
@@ -171,18 +165,18 @@ Antigravity automatically selects the right skill, subagent, and MCP tool based 
 ```
 * **Engine**: Dispatches `pr-review-toolkit` (`silent-failure-hunter`, `pr-test-analyzer`, `type-design-analyzer`, and `code-reviewer`) with confidence scoring.
 
-### 5. 🚨 Production Crash Triage
+### 5. 🗄️ Full-Stack Database & Backend Migrations
 ```text
-"Inspect unresolved production errors in Sentry, identify release regressions, and write a regression test."
+"Design a high-scale user schema migration with Row-Level Security in Supabase and optimize slow query joins."
 ```
-* **Engine**: Activates `sentry-debugger` via the `sentry-investigator` subagent to trace breadcrumbs, inspect source-mapped stack traces, and author safe patches.
+* **Engine**: Launches `database-tools` and `supabase` via the `database-architect` subagent to design idempotent migrations and generate composite indexes.
 
 ---
 
 ## 🧩 Complete Plugins & Skills Directory
 
 <details open>
-<summary><h3>🛠️ Development, Architecture & Databases (12 Plugins)</h3></summary>
+<summary><h3>🛠️ Development, Architecture & Databases (7 Plugins)</h3></summary>
 
 > *End-to-end software engineering acceleration: multi-stage feature planning, code simplification, database schema engineering (SQLite/PostgreSQL), Docker containerization, and Git automation.*
 
@@ -193,13 +187,8 @@ Antigravity automatically selects the right skill, subagent, and MCP tool based 
 | **[`docker-devops`](./plugins/docker-devops)** | `1.0.0` | • <code>dockerfile-optimizer</code><br/>• <code>compose-architect</code> | • <code>devops-engineer</code> | ⚡ <b>Yes</b> | Docker containerization and Compose orchestration toolkit: multi-stage build optimization, security, and compose stacks. |
 | **[`code-simplifier`](./plugins/code-simplifier)** | `1.0.0` | — | • <code>code-simplifier</code> | — | Agent that simplifies and refines code for clarity, consistency, and maintainability while preserving functionality. |
 | **[`commit-commands`](./plugins/commit-commands)** | `1.0.0` | • <code>clean-gone</code><br/>• <code>commit</code><br/>• <code>commit-push-pr</code> | — | — | Streamline your git workflow with simple commands for committing, pushing, and creating pull requests. |
-| **[`antigravity-plugin-dev`](./plugins/antigravity-plugin-dev)** | `1.0.0` | • <code>agent-development</code><br/>• <code>command-development</code><br/>• <code>create-plugin</code><br/>• <code>hook-development</code><br/>• <code>mcp-integration</code><br/>• <code>plugin-settings</code><br/>• <code>plugin-structure</code><br/>• <code>skill-development</code> | • <code>agent-creator</code><br/>• <code>plugin-validator</code><br/>• <code>skill-reviewer</code> | — | Plugin development toolkit with skills for creating agents, commands, hooks, MCP integrations, and plugins. |
-| **[`skill-creator`](./plugins/skill-creator)** | `1.0.0` | • <code>skill-creator</code> | — | — | Create new skills, improve existing skills, and measure skill performance with evaluation benchmarks. |
-| **[`agent-sdk-dev`](./plugins/agent-sdk-dev)** | `1.0.0` | • <code>new-sdk-app</code> | • <code>agent-sdk-verifier-py</code><br/>• <code>agent-sdk-verifier-ts</code> | — | Antigravity Agent SDK Development Plugin for authoring and verifying autonomous AI agents. |
 | **[`antigravity-setup`](./plugins/antigravity-setup)** | `1.0.0` | • <code>claude-automation-recommender</code> | — | — | Analyze codebases and recommend tailored Google Antigravity automations such as hooks, skills, subagents, and MCPs. |
 | **[`antigravity-rules-management`](./plugins/antigravity-rules-management)** | `1.0.0` | • <code>claude-md-improver</code><br/>• <code>revise-claude-md</code> | — | — | Tools to maintain and improve AGENTS.md files: audit quality, capture session learnings, and optimize project memory. |
-| **[`hookify`](./plugins/hookify)** | `1.0.0` | • <code>configure</code><br/>• <code>help</code><br/>• <code>hookify</code><br/>• <code>list</code><br/>• <code>writing-rules</code> | • <code>conversation-analyzer</code> | — | Easily create hooks to prevent unwanted behaviors by analyzing conversation patterns and tool invocations. |
-| **[`code-modernization`](./plugins/code-modernization)** | `1.0.0` | • <code>modernize</code><br/>• <code>modernize-assess</code><br/>• <code>modernize-brief</code><br/>• <code>modernize-extract-rules</code><br/>• <code>modernize-harden</code><br/>• <code>modernize-map</code><br/>• <code>modernize-preflight</code><br/>• <code>modernize-reimagine</code><br/>• <code>modernize-review</code><br/>• <code>modernize-status</code><br/>• <code>modernize-transform</code><br/>• <code>modernize-uplift</code><br/>• <code>modernize-verify</code> | • <code>architecture-critic</code><br/>• <code>business-rules-extractor</code><br/>• <code>legacy-analyst</code><br/>• <code>scaffolder</code><br/>• <code>security-auditor</code><br/>• <code>test-engineer</code><br/>• <code>uplift-migrator</code><br/>• <code>version-delta-analyst</code> | — | Guided modernization for legacy codebases: assessment, rule extraction, security hardening, and incremental rewrites. |
 
 </details>
 
@@ -230,16 +219,14 @@ Antigravity automatically selects the right skill, subagent, and MCP tool based 
 </details>
 
 <details open>
-<summary><h3>🌐 MCP Servers, Browser DevTools & Cloud (21 Plugins)</h3></summary>
+<summary><h3>🌐 MCP Servers, Browser DevTools & Cloud (13 Plugins)</h3></summary>
 
-> *Model Context Protocol (MCP) bridges connecting Antigravity directly to Chrome DevTools, Playwright headless browser automation, cloud databases, issue trackers, error monitors, and external developer platforms.*
+> *Model Context Protocol (MCP) bridges connecting Antigravity directly to Chrome DevTools, Playwright headless browser automation, cloud databases, and external developer platforms.*
 
 | Plugin | Version | Contained Skills | Subagents | MCP | Description |
 | :--- | :---: | :--- | :--- | :---: | :--- |
-| **[`sentry`](./plugins/sentry)** | `1.0.0` | • <code>sentry-debugger</code> | • <code>sentry-investigator</code> | ⚡ <b>Yes</b> | Official Sentry MCP server: inspect unresolved exceptions, stack traces, breadcrumb trails, and release regressions. |
 | **[`brave-search`](./plugins/brave-search)** | `1.0.0` | • <code>brave-search</code> | • <code>web-researcher</code> | ⚡ <b>Yes</b> | Official Brave Search MCP: private, real-time web and local news searches against the independent Brave Index. |
 | **[`selenium`](./plugins/selenium)** | `1.0.0` | • <code>selenium-automation</code> | • <code>cross-browser-tester</code> | ⚡ <b>Yes</b> | Selenium WebDriver cross-browser testing, element navigation, and automated accessibility checks. |
-| **[`flutter`](./plugins/flutter)** | `1.0.0` | • <code>flutter-dev</code> | • <code>flutter-engineer</code> | ⚡ <b>Yes</b> | Flutter app development MCP server: execute Flutter commands, run apps, and capture frame screenshots. |
 | **[`firecrawl`](./plugins/firecrawl)** | `1.0.0` | • <code>firecrawl-scraper</code> | • <code>web-crawler</code> | ⚡ <b>Yes</b> | Official Firecrawl web scraper, crawler, and clean markdown extractor MCP server for AI agents. |
 | **[`figma`](./plugins/figma)** | `1.0.0` | • <code>figma-design-to-code</code> | • <code>figma-inspector</code> | ⚡ <b>Yes</b> | Official Figma MCP integration. Inspect design tokens, auto-layouts, and convert design nodes to React/Tailwind. |
 | **[`supabase`](./plugins/supabase)** | `1.0.0` | • <code>supabase-expert</code> | • <code>supabase-architect</code> | ⚡ <b>Yes</b> | Official Supabase MCP integration. Manage cloud Postgres, schema migrations, RLS policies, and Edge Functions. |
@@ -249,13 +236,7 @@ Antigravity automatically selects the right skill, subagent, and MCP tool based 
 | **[`context7`](./plugins/context7)** | `1.0.0` | — | — | ⚡ <b>Yes</b> | Upstash Context7 MCP server for live, version-accurate documentation lookup. |
 | **[`firebase`](./plugins/firebase)** | `1.0.0` | — | — | ⚡ <b>Yes</b> | Google Firebase MCP integration. Manage Firestore databases, authentication, and cloud functions. |
 | **[`github`](./plugins/github)** | `1.0.0` | — | — | ⚡ <b>Yes</b> | Official GitHub MCP server for repository management, pull requests, issues, and Actions. |
-| **[`gitlab`](./plugins/gitlab)** | `1.0.0` | — | — | ⚡ <b>Yes</b> | GitLab DevOps platform integration. Manage repositories, merge requests, CI/CD pipelines, and issues. |
-| **[`linear`](./plugins/linear)** | `1.0.0` | — | — | ⚡ <b>Yes</b> | Linear issue tracking integration. Create issues, manage projects, and update sprint cycles. |
 | **[`serena`](./plugins/serena)** | `1.0.0` | — | — | ⚡ <b>Yes</b> | Semantic code analysis MCP server providing intelligent code understanding and refactoring suggestions. |
-| **[`terraform`](./plugins/terraform)** | `1.0.0` | — | — | ⚡ <b>Yes</b> | Terraform MCP Server providing integration with Terraform modules, state plans, and linting. |
-| **[`asana`](./plugins/asana)** | `1.0.0` | • <code>asana-setup</code> | — | — | Asana project management integration. Connects Google Antigravity to Asana's V2 MCP server. |
-| **[`laravel-boost`](./plugins/laravel-boost)** | `1.0.0` | — | — | ⚡ <b>Yes</b> | Laravel development toolkit MCP server for Artisan commands, models, and routes inspection. |
-| **[`mcp-server-dev`](./plugins/mcp-server-dev)** | `1.0.0` | • <code>build-mcp-app</code><br/>• <code>build-mcp-server</code><br/>• <code>build-mcpb</code> | — | — | Skills for designing and building MCP servers that work seamlessly with Antigravity. |
 | **[`mcp-tunnels`](./plugins/mcp-tunnels)** | `1.0.0` | • <code>create-docker-mcp-tunnel</code> | — | — | Connect Antigravity to a private MCP server through an Antigravity Ecosystem MCP tunnel. |
 
 </details>
@@ -266,7 +247,7 @@ Antigravity automatically selects the right skill, subagent, and MCP tool based 
 > *Tailored frontend UI/UX design engines, visual workspaces, generative artifact generation, live interactive HTML playgrounds, and sequential chain-of-thought reasoning.*
 
 | Plugin | Version | Contained Skills | Subagents | MCP | Description |
-| :--- | :---: | :--- | :--- | :--- | :---: | :--- |
+| :--- | :---: | :--- | :--- | :---: | :--- |
 | **[`storyflow`](./plugins/storyflow)** | `1.0.0` | • <code>storyflow-workspace</code> | • <code>storyflow-facilitator</code> | ⚡ <b>Yes</b> | Visual project management, infinite canvas ideation, Kanban boards, mind maps, and workflow automation via Storyflow MCP. |
 | **[`sequential-thinking`](./plugins/sequential-thinking)** | `1.0.0` | • <code>sequential-thinking</code> | • <code>deep-reasoner</code> | ⚡ <b>Yes</b> | Multi-step chain-of-thought reasoning, hypothesis testing, branching, and adaptive problem-solving via Sequential Thinking MCP. |
 | **[`aidesigner`](./plugins/aidesigner)** | `1.0.0` | • <code>aidesigner-frontend</code> | • <code>aidesigner-specialist</code> | ⚡ <b>Yes</b> | Establish visual direction, generate high-fidelity UI artifacts, and adopt designs into native frontend stacks via AIDesigner MCP. |
@@ -292,9 +273,9 @@ flowchart TD
     U["User Request / Task"]
     CLI["Google Antigravity CLI / IDE"]
     PD{"Progressive Disclosure Evaluator"}
-    SK["On-Demand Skills (69 Active Runbooks)"]
-    AG["Autonomous Subagents (50 Specialized)"]
-    MCP["MCP Servers (Storyflow, Sentry, Brave Search, Sequential Thinking, AIDesigner, Storybook, Miro, Selenium, Flutter, Figma, Firecrawl, Playwright)"]
+    SK["On-Demand Skills (35 Active Runbooks)"]
+    AG["Autonomous Subagents (34 Specialized)"]
+    MCP["MCP Servers (Storyflow, Brave Search, Sequential Thinking, AIDesigner, Storybook, Miro, Selenium, Figma, Firecrawl, Playwright, Supabase)"]
     RES["Clean Output / Verified Code Changes"]
 
     U --> CLI
@@ -313,7 +294,7 @@ This suite is engineered for minimal latency and maximum token efficiency:
 
 * **0% Idle CPU & RAM (Lazy-Loaded MCPs)**: Tool servers like Playwright, Selenium, and Docker remain unspawned on disk until a prompt explicitly requires them.
 * **Progressive Disclosure**: Full skill runbooks (`SKILL.md`) are never dumped into context up front. Only lightweight routing metadata is indexed, loading full instructions strictly on demand.
-* **Optimized System Prompt**: Purged of hardware-locked devices, platform-incompatible bridges, and dummy templates—saving ~1,800 tokens per prompt turn for faster generation and laser-focused attention.
+* **Optimized System Prompt**: Purged of hardware-locked devices, platform-incompatible bridges, and dummy templates—saving thousands of tokens per prompt turn for faster generation and laser-focused attention.
 
 ### Folder Hierarchy Specification
 
@@ -346,8 +327,8 @@ python scripts/test_plugins.py
 
 - [x] **Schema Validation**: Validates all `plugin.json` and `marketplace.json` manifests against Antigravity specifications.
 - [x] **YAML Frontmatter Integrity**: Confirms every `SKILL.md` defines required `name` and `description` triggers.
-- [x] **Agent Definitions**: Checks all 50 subagent `.md` files for supported model parameters (`inherit`, `flash`, `pro`).
-- [x] **MCP Transports**: Validates JSON syntax and command/args structures across all 25 `mcp_config.json` files.
+- [x] **Agent Definitions**: Checks all 34 subagent `.md` files for supported model parameters (`inherit`, `flash`, `pro`).
+- [x] **MCP Transports**: Validates JSON syntax and command/args structures across all 19 `mcp_config.json` files.
 - [x] **100% Passed**: Zero warnings, zero dropped plugins.
 
 ---

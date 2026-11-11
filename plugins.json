@@ -1,31 +1,6 @@
 {
   "plugins": [
     {
-      "name": "agent-sdk-dev",
-      "displayName": "Agent Sdk Dev",
-      "description": "Antigravity Agent SDK Development Plugin",
-      "version": "1.0.0",
-      "source": "./plugins/agent-sdk-dev",
-      "logo": "plugins/agent-sdk-dev/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Agent Sdk Dev capabilities",
-        "Execute Agent Sdk Dev standard workflow",
-        "Review configuration and settings for Agent Sdk Dev"
-      ],
-      "capabilities": {
-        "skills": [
-          "new-sdk-app"
-        ],
-        "agents": [
-          "agent-sdk-verifier-py",
-          "agent-sdk-verifier-ts"
-        ],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
       "name": "aidesigner",
       "displayName": "AIDesigner Frontend",
       "description": "Establish clear visual directions, generate or refine high-fidelity UI artifacts, and adopt designs into repository-native frontend stacks via AIDesigner MCP.",
@@ -46,39 +21,6 @@
           "aidesigner-specialist"
         ],
         "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "antigravity-plugin-dev",
-      "displayName": "Antigravity Plugin Dev",
-      "description": "Plugin development toolkit with skills for creating agents, commands, hooks, MCP integrations, and comprehensive plugin structure guidance",
-      "version": "1.0.0",
-      "source": "./plugins/antigravity-plugin-dev",
-      "logo": "plugins/antigravity-plugin-dev/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Antigravity Plugin Dev capabilities",
-        "Execute Antigravity Plugin Dev standard workflow",
-        "Review configuration and settings for Antigravity Plugin Dev"
-      ],
-      "capabilities": {
-        "skills": [
-          "agent-development",
-          "command-development",
-          "create-plugin",
-          "hook-development",
-          "mcp-integration",
-          "plugin-settings",
-          "plugin-structure",
-          "skill-development"
-        ],
-        "agents": [
-          "agent-creator",
-          "plugin-validator",
-          "skill-reviewer"
-        ],
-        "hasMcp": false,
         "hasHooks": false,
         "hasRules": true
       }
@@ -161,28 +103,6 @@
       }
     },
     {
-      "name": "asana",
-      "displayName": "Asana",
-      "description": "Asana project management integration. Connects Google Antigravity to Asana's V2 MCP server (https://mcp.asana.com/v2/mcp) to create and manage tasks, search projects, update assignments, and track progress. Requires a one-time setup of your own Asana OAuth app — run /asana-setup after installing.",
-      "version": "1.0.0",
-      "source": "./plugins/asana",
-      "logo": "plugins/asana/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Asana capabilities",
-        "Execute Asana standard workflow",
-        "Review configuration and settings for Asana"
-      ],
-      "capabilities": {
-        "skills": [
-          "asana-setup"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
       "name": "brave-search",
       "displayName": "Brave Search Live Web Index",
       "description": "Privacy-focused live web and local news search using the independent Brave Search Index via official Brave Search MCP.",
@@ -229,49 +149,6 @@
         ],
         "hasMcp": true,
         "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "code-modernization",
-      "displayName": "Code Modernization",
-      "description": "Guided modernization for any legacy codebase: start with /modernize, get an assessment, an interactive map, the business rules mined from the code, and a plan you approve, then an upgrade, a rewrite or a rebuild with independent proof that the new code behaves like the old. Includes security hardening, a one-page report, specialist agents, and an optional live progress pane (early access).",
-      "version": "1.0.0",
-      "source": "./plugins/code-modernization",
-      "logo": "plugins/code-modernization/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Code Modernization capabilities",
-        "Execute Code Modernization standard workflow",
-        "Review configuration and settings for Code Modernization"
-      ],
-      "capabilities": {
-        "skills": [
-          "modernize",
-          "modernize-assess",
-          "modernize-brief",
-          "modernize-extract-rules",
-          "modernize-harden",
-          "modernize-map",
-          "modernize-preflight",
-          "modernize-reimagine",
-          "modernize-review",
-          "modernize-status",
-          "modernize-transform",
-          "modernize-uplift",
-          "modernize-verify"
-        ],
-        "agents": [
-          "architecture-critic",
-          "business-rules-extractor",
-          "legacy-analyst",
-          "scaffolder",
-          "security-auditor",
-          "test-engineer",
-          "uplift-migrator",
-          "version-delta-analyst"
-        ],
-        "hasMcp": false,
-        "hasHooks": true,
         "hasRules": true
       }
     },
@@ -530,31 +407,6 @@
       }
     },
     {
-      "name": "flutter",
-      "displayName": "Flutter App Development",
-      "description": "Flutter MCP server integration by Anton Malofeev. Execute Flutter CLI commands, run mobile/web apps, execute tests, and capture screenshots directly via MCP.",
-      "version": "1.0.0",
-      "source": "./plugins/flutter",
-      "logo": "plugins/flutter/assets/logo.svg",
-      "suggestedPrompts": [
-        "Execute Flutter pub get and dependency resolution",
-        "Run Flutter integration tests and analyze results",
-        "Capture screenshot of running Flutter app",
-        "Execute Flutter build and inspect generated mobile assets"
-      ],
-      "capabilities": {
-        "skills": [
-          "flutter-dev"
-        ],
-        "agents": [
-          "flutter-engineer"
-        ],
-        "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
       "name": "frontend-design",
       "displayName": "Frontend Design",
       "description": "Frontend design skill for UI/UX implementation",
@@ -597,74 +449,6 @@
       }
     },
     {
-      "name": "gitlab",
-      "displayName": "Gitlab",
-      "description": "GitLab DevOps platform integration. Manage repositories, merge requests, CI/CD pipelines, issues, and wikis. Full access to GitLab's comprehensive DevOps lifecycle tools.",
-      "version": "1.0.0",
-      "source": "./plugins/gitlab",
-      "logo": "plugins/gitlab/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Gitlab capabilities",
-        "Execute Gitlab standard workflow",
-        "Review configuration and settings for Gitlab"
-      ],
-      "capabilities": {
-        "skills": [],
-        "agents": [],
-        "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "hookify",
-      "displayName": "Hookify",
-      "description": "Easily create hooks to prevent unwanted behaviors by analyzing conversation patterns",
-      "version": "1.0.0",
-      "source": "./plugins/hookify",
-      "logo": "plugins/hookify/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Hookify capabilities",
-        "Execute Hookify standard workflow",
-        "Review configuration and settings for Hookify"
-      ],
-      "capabilities": {
-        "skills": [
-          "configure",
-          "help",
-          "hookify",
-          "list",
-          "writing-rules"
-        ],
-        "agents": [
-          "conversation-analyzer"
-        ],
-        "hasMcp": false,
-        "hasHooks": true,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "laravel-boost",
-      "displayName": "Laravel Boost",
-      "description": "Laravel development toolkit MCP server. Provides intelligent assistance for Laravel applications including Artisan commands, Eloquent queries, routing, migrations, and framework-specific code generation.",
-      "version": "1.0.0",
-      "source": "./plugins/laravel-boost",
-      "logo": "plugins/laravel-boost/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Laravel Boost capabilities",
-        "Execute Laravel Boost standard workflow",
-        "Review configuration and settings for Laravel Boost"
-      ],
-      "capabilities": {
-        "skills": [],
-        "agents": [],
-        "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
       "name": "learning-output-style",
       "displayName": "Learning Output Style",
       "description": "Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style)",
@@ -681,50 +465,6 @@
         "agents": [],
         "hasMcp": false,
         "hasHooks": true,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "linear",
-      "displayName": "Linear",
-      "description": "Linear issue tracking integration. Create issues, manage projects, update statuses, search across workspaces, and streamline your software development workflow with Linear's modern issue tracker.",
-      "version": "1.0.0",
-      "source": "./plugins/linear",
-      "logo": "plugins/linear/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Linear capabilities",
-        "Execute Linear standard workflow",
-        "Review configuration and settings for Linear"
-      ],
-      "capabilities": {
-        "skills": [],
-        "agents": [],
-        "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "mcp-server-dev",
-      "displayName": "Mcp Server Dev",
-      "description": "Skills for designing and building MCP servers that work seamlessly with Antigravity — guides you through deployment models (remote HTTP, MCPB, local), tool design patterns, auth, and interactive MCP apps.",
-      "version": "1.0.0",
-      "source": "./plugins/mcp-server-dev",
-      "logo": "plugins/mcp-server-dev/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Mcp Server Dev capabilities",
-        "Execute Mcp Server Dev standard workflow",
-        "Review configuration and settings for Mcp Server Dev"
-      ],
-      "capabilities": {
-        "skills": [
-          "build-mcp-app",
-          "build-mcp-server",
-          "build-mcpb"
-        ],
-        "agents": [],
-        "hasMcp": false,
-        "hasHooks": false,
         "hasRules": true
       }
     },
@@ -936,31 +676,6 @@
       }
     },
     {
-      "name": "sentry",
-      "displayName": "Sentry Error Monitoring & Debugging",
-      "description": "Inspect live production errors, stack traces, breadcrumbs, release regressions, and telemetry issues via official Sentry MCP.",
-      "version": "1.0.0",
-      "source": "./plugins/sentry",
-      "logo": "plugins/sentry/assets/logo.svg",
-      "suggestedPrompts": [
-        "Fetch latest unresolved Sentry errors in production and correlate with recent deploys",
-        "Inspect the stack trace and breadcrumbs for the top crashing issue in our API",
-        "Identify regressions introduced after the latest release tag",
-        "Propose code fixes for recurring NullPointerExceptions in frontend components"
-      ],
-      "capabilities": {
-        "skills": [
-          "sentry-debugger"
-        ],
-        "agents": [
-          "sentry-investigator"
-        ],
-        "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
       "name": "sequential-thinking",
       "displayName": "Sequential Thinking & Dynamic Reasoning",
       "description": "Multi-step chain-of-thought reasoning, hypothesis testing, branching, and adaptive problem-solving via the Sequential Thinking MCP server.",
@@ -1026,28 +741,6 @@
           "ui-component-engineer"
         ],
         "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "skill-creator",
-      "displayName": "Skill Creator",
-      "description": "Create new skills, improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, update or optimize an existing skill, run evals to test a skill, or benchmark skill performance with variance analysis.",
-      "version": "1.0.0",
-      "source": "./plugins/skill-creator",
-      "logo": "plugins/skill-creator/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Skill Creator capabilities",
-        "Execute Skill Creator standard workflow",
-        "Review configuration and settings for Skill Creator"
-      ],
-      "capabilities": {
-        "skills": [
-          "skill-creator"
-        ],
-        "agents": [],
-        "hasMcp": false,
         "hasHooks": false,
         "hasRules": true
       }
@@ -1122,26 +815,6 @@
         "agents": [
           "supabase-architect"
         ],
-        "hasMcp": true,
-        "hasHooks": false,
-        "hasRules": true
-      }
-    },
-    {
-      "name": "terraform",
-      "displayName": "Terraform",
-      "description": "The Terraform MCP Server provides seamless integration with Terraform ecosystem, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development.",
-      "version": "1.0.0",
-      "source": "./plugins/terraform",
-      "logo": "plugins/terraform/assets/logo.svg",
-      "suggestedPrompts": [
-        "Run diagnostics and inspect Terraform capabilities",
-        "Execute Terraform standard workflow",
-        "Review configuration and settings for Terraform"
-      ],
-      "capabilities": {
-        "skills": [],
-        "agents": [],
         "hasMcp": true,
         "hasHooks": false,
         "hasRules": true

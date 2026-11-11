@@ -64,15 +64,6 @@
         "Authorization": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
       }
     },
-    "linear": {
-      "url": "https://mcp.linear.app/mcp"
-    },
-    "gitlab": {
-      "url": "https://gitlab.com/api/v4/mcp",
-      "headers": {
-        "PRIVATE-TOKEN": "${GITLAB_PERSONAL_ACCESS_TOKEN}"
-      }
-    },
     "serena": {
       "command": "uvx",
       "args": [
@@ -80,18 +71,6 @@
         "git+https://github.com/oraios/serena",
         "serena",
         "start-mcp-server"
-      ],
-      "env": {}
-    },
-    "terraform": {
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "-e",
-        "TFE_TOKEN=${TFE_TOKEN}",
-        "hashicorp/terraform-mcp-server:0.4.0"
       ],
       "env": {}
     },
@@ -184,14 +163,6 @@
       ],
       "env": {}
     },
-    "flutter": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-server-flutter"
-      ],
-      "env": {}
-    },
     "aidesigner": {
       "type": "http",
       "url": "https://api.aidesigner.ai/api/v1/mcp"
@@ -207,16 +178,6 @@
         "@modelcontextprotocol/server-sequential-thinking@latest"
       ],
       "env": {}
-    },
-    "sentry": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@sentry/mcp-server@latest"
-      ],
-      "env": {
-        "SENTRY_AUTH_TOKEN": "${SENTRY_AUTH_TOKEN}"
-      }
     },
     "brave-search": {
       "command": "npx",
